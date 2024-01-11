@@ -8,22 +8,17 @@ html{
 }
 
  /* MAIN */
-.logo{
+ 
+.Logo {
     display: flex;
-}
-.Logo img {
-    
-    height: 200px;
-    width: 200px;
-    margin-bottom: 10px;
  }
-#Titulo h1 {
+ .Logo img {
+    width: 300px;
+ }
+.TItulo {
     font-family: 'motiva-sans';
     color: aliceblue;
-    font-size: 70px;
-    text-align: center;
-    margin-bottom: -140px;
-    margin-left: -1800px;
+    display: flex; 
 }
 
 #Secciones h1 {
@@ -70,29 +65,48 @@ body {
 a:hover {
     background-color: #3d3d3d;
 }
-#BibliotecaMain p {
+#InicioMain p {
     font-family: 'motiva-sans';
     color: rgb(211, 217, 223);
     font-size: 20px;
 }
-#BibliotecaMain h2 {
+#InicioMain h2 {
     font-family: 'motiva-sans';
     color: aliceblue;
     font-size: 40px;  
  }
- #BibliotecaMain img {
+ #InicioMain img {
     display: flex;
     height: 200px;
     width: 600px;
  }
- #BibliotecaMain form {
+ #InicioMain form {
     text-align: center;
     margin-bottom: -35px;
     margin-left: -1000px;
  }
- .Updates{
-    display: flex;
-    
+ #Recientes img {
+    width: 500px;
+    height: 600px;
+    display: inline-block;
+    justify-content: 100px;
+ }
+
+#Updates{
+ display: flex;
+ justify-content: flex-start;
+
+}
+.card  {
+    display:block
+}
+.card-img-top{
+    height: 350px;
+    width: 800px;
+}
+.card-body{
+    width: 600x;
+    background-color: #202127;
 }
 .image-png {
     margin-right: 7px;
@@ -126,16 +140,30 @@ a:hover {
 .dropdown:hover .content{
     display: block;
 }
-#Recientes img {
-   width: 500px;
-   height: 600px;
-}
+
 footer {
     background-color:  rgb(52, 52, 61)
 }
 
 
 /* MAIN */
+
+/*BIBLIOTECA*/
+ #bibliotecajuegos {
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ #bibliotecajuegos img {
+    width: 300px;
+    height: 500px; 
+ }
+
+
+
+
+
+
+/*BIBLIOTECA*/
 
 /* TIENDA */
 
@@ -242,6 +270,7 @@ p{
     line-height: 80px;
     text-align: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 #ComunidadSecciones li{
     font-size: 30px;
@@ -259,19 +288,6 @@ a:hover {
     background-color: rgb(62, 62, 85)
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* COMUNIDAD */

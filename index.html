@@ -4,73 +4,85 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <link rel="stylesheet" href="Estilos/style.css">
-
- <title>SteamLowcost</title>
+   <link rel="stylesheet" href="Estilos/style.css">
+ 
+   <title>SteamLowcost</title>
+   
  </head>
 
  <body>
    <header>
-
-        <section id="Titulo"">
-            <h1>Steam Lowcost</h1> 
-        </section>
-
-   <div class="Logo">
-      <img src="Imagenes/STEAMLOGO.png">
-  </div>
-    <header>
-       
-       <section id="Secciones">
+         <div class="Logo">
+            <img src="Imagenes/STEAMLOGO.png">
+            <h1 class="Nombre-pagina">Steam Lowcost</h1>
+         </div>
+    </section>
+  </header>
+     <main>
+       <section id="Secciones"> 
         <nav> 
          <ul>
-           <li><a href="Tienda.html"><h3>Tienda</h3></a></li>
-           <li><a href="Categorias.html"> <h3>Categorias</h3></a></li>   
-           <li><a href="Comunidad.html"><h3>Comunidad</h3 ></a></li>   
-           <li><a href="Soporte.html"><h3>Soporte</h3></a></lis>
-         </ul>
+          <li><a href="index.html"><h3>INICIO</h3></a></li>
+          <li><a href="biblioteca.html"><h3>BIBLIOTECA</h3></a></li>
+          <li><a href="Tienda.html"> <h3>TIENDA</h3></a></li>   
+          <li><a href="Comunidad.html"><h3>COMUNIDAD</h3 ></a></li>   
+          <li><a href="Soporte.html"><h3>SOPORTE</h3></a></lis>
         </nav> 
       </Section> 
-    </header>
 
-    <main>
-    <section id="BibliotecaMain"> 
-     
+      <section id="Recientes">
+        <h2>Jugados recientemente</h2>
+         <img src="Imagenes/pz.PNG" alt="">
+         <img src="Imagenes/cyberpu.png" alt="">
+         <img src="Imagenes/dst.png" alt="">
+         <img src="Imagenes/tldark.png" alt="">
+         <img src="Imagenes/terraria.png" alt="">
+         <img src="Imagenes/dtranding.png" alt="">
+       </section>  
+       
+       <section id="ComunidadSecciones">
+        <nav>
+            <ul>
+                <li><a href="">Novedades</a></li>
+                <li><a href="">Amigos</a></li>
+                <li><a href="">Recomendados</a></li>
+            </ul>
+        </nav>
+       
     <h2>Novedades</h2>
 
-       <div class="Updates">
+       <Section id="Updates">
 
-       <a href="https://store.steampowered.com/news/app/1091500/view/3873721309645503927"><img class="image-png" src="Imagenes/image.png" alt="CyberPupdate"></a>
-       <a href="https://store.steampowered.com/news/app/305620/view/3904120607133158745"><img class="tldupdate-png" src="Imagenes/tldupdate.png" alt="tldupdate"></a>
-
-       </div>
-
-    <h2>Biblioteca</h2>
-
-     <form action="">
-      <label for="buscar"></label>
-      <input type="text" placeholder="buscar"> 
-     </form>     
-
-       <div class="dropdown"">
-          <button>JUEGOS</button>
-           <div class="content">  
-            <a href="">SOFTWARE</a>   
-            <a href="">HERRAMIENTAS</a>   
-            <a href="">BANDAS SONORAS</a><   
+        <div class="card 1">
+          <img src="Imagenes/brawlupdate.PNG" class="card-img-top" alt="">
+          <div class="card-body">
+            <h3 class="card-title">PUBLICADO El mie., 10 de enero</h3>
+            <p class="card-text">31, RANKED SEASON 31.</p>
+            <a href="#" class="btn btn-primary"></a>
+            <a href="#" class="btn btn-primary">Brawlhalla</a>
           </div>
-       </div>
-      </section>
-   <section id="Recientes">
-    <h2>Jugados recientemente</h2>
-    
-     <img src="Imagenes/cyberpu.png" alt="">
-     <img src="Imagenes/dst.png" alt="">
-     <img src="Imagenes/tldark.png" alt="">
-     <img src="Imagenes/terraria.png" alt="">
-     <img src="Imagenes/dtranding.png" alt="">
+        </div>
 
-   </section>       
+       </div>
+       <div class="card">
+        <img src="Imagenes/phasmohpobiaupdate.PNG" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">PUBLICADO EL mar., 9 de enero</h5>
+          <p class="card-text">Ascension., Minor Update v0.9.4.0.</p>
+          <a href="#" class="btn btn-primary">Phasmophobia</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Imagenes/dbdupdate.PNG" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">PUBLICADO El lun/. 8 de enero</h5>
+          <p class="card-text">Developer Update., January 2024</p>
+          <a href="#" class="btn btn-primary">Dead By Daylight</a>
+        </div>
+      </div>
+      </section>
+
+
  </main>
   
  <footer>
@@ -78,5 +90,6 @@
  © 2023 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
  Todos los precios incluyen IVA (donde sea aplicable).  </h5>
  </footer>
+ 
 </body>
 </html>
