@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'motiva-sans';
+    src: url('../motiva-sans/MotivaSansRegular.woff.ttf');
+}
+
+html{
+    font-size: large;
+}
+
+ /* MAIN */
+.logo{
+    display: flex;
+}
+.Logo img {
+    
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+ }
+#Titulo h1 {
+    font-family: 'motiva-sans';
+    color: aliceblue;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: -140px;
+    margin-left: -1800px;
+}
+
+#Secciones h1 {
+    font-family: 'motiva-sans';
+    color: rgb(255, 255, 255); 
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 140px;
+    margin-left: -1300px;
+}
+#Secciones h2 {
+    font-family: 'motiva-sans';
+    color: aliceblue;
+    font-size: 70px;
+}
+#Secciones h3 {
+    color: aliceblue;
+}
+
+body {
+    background-color:#1C1C1C;
+}
+#Secciones{
+    background-color: rgb(36, 36, 44);
+    height: 75px;
+}
+#Secciones ul {
+    font-family: 'motiva-sans';
+    font-size: 15px;
+    line-height: -px;
+    text-align: left;
+    list-style: none;
+}
+#Secciones li{
+    width: 100px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+}
+#Secciones a {
+    display: block;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #3d3d3d;
+}
+#BibliotecaMain p {
+    font-family: 'motiva-sans';
+    color: rgb(211, 217, 223);
+    font-size: 20px;
+}
+#BibliotecaMain h2 {
+    font-family: 'motiva-sans';
+    color: aliceblue;
+    font-size: 40px;  
+ }
+ #BibliotecaMain img {
+    display: flex;
+    height: 200px;
+    width: 600px;
+ }
+ #BibliotecaMain form {
+    text-align: center;
+    margin-bottom: -35px;
+    margin-left: -1000px;
+ }
+ .Updates{
+    display: flex;
+    
+}
+.image-png {
+    margin-right: 7px;
+}
+.dropdown{
+    display:  inline-block;
+}
+.dropdown button {
+    font-family: 'motiva-sans';
+    font-size: 19px;
+    background-color: rgb(52, 52, 61);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+.dropdown a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    font-family: 'motiva-sans';
+    display: none;
+    position: absolute;
+     background-color: rgb(26, 26, 31);
+     min-width: 100px;
+     box-shadow: 2px 2px 5px rgb(26, 26, 31);
+}
+.dropdown:hover .content{
+    display: block;
+}
+#Recientes img {
+   width: 500px;
+   height: 600px;
+}
+footer {
+    background-color:  rgb(52, 52, 61)
+}
+
+
+/* MAIN */
+
+/* TIENDA */
+
+#Tienda {
+    background-color:rgb(36, 36, 44);
+    height: 110px;
+    
+}
+#Tienda h1 {
+    font-family: 'motiva-sans';
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+#Tienda h3 {
+    color: aliceblue;
+}
+#SteamPrincipal h2 {
+    font-size: 50px;
+}
+#Tienda p{
+    font-family: 'motiva-sans';
+    color: aliceblue;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    
+}
+#TiendaPrincipal h1 {
+    color: aliceblue;
+    font-size:  60px;
+}
+#TiendaPrincipal form {
+    text-align: center;
+    margin-left: -700px;
+    margin-top: -38px;
+}
+.Portadas{
+    margin-left: 110px;
+    margin-bottom: 100px;
+}
+.Portadas h1 {
+    margin-left: -100px;
+    font-size: 70px;
+
+}
+img{
+    height:300px;
+    width:500px;
+}
+
+/* TIENDA */
+
+/* CATEGORIAS */
+
+body {
+    background-color: black;
+    font-family: "motiva-sans"
+}
+
+#Generos ul{
+    background-color:rgb(36, 36, 44) ; 
+    list-style: none;
+}
+#Generos li{
+    display: flex;
+    font-size: px;
+    color: aliceblue;
+}
+#Generos a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav1 {
+    display: flex;
+}
+.nav2 {
+    display: flex;
+}
+.nav3 {
+    display: flex;
+}
+.nav4 {
+    display: flex;
+}
+.nav5{
+    display: flex;
+}
+/* CATEGORIAS */
+
+/* COMUNIDAD */
+body{
+    background-color: black;
+    font-family: "motiva-sans";
+}
+body H1{
+    font-size: 100px;
+}
+p{
+    font-size: 50px;
+}
+#ComunidadSecciones ul {
+    background-color:rgb(36, 36, 44) ;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    list-style: none;
+}
+#ComunidadSecciones li{
+    font-size: 30px;
+    width: 300px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+}
+#ComunidadSecciones a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    background-color: rgb(62, 62, 85)
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COMUNIDAD */
+
+/* SOPORTE */
+
+body{
+    background-color: #1C1C1C;
+    font-family: 'motiva-sans';
+    color: aliceblue;
+
+}
+
+h1 {
+    font-size: 50PX;
+    margin-left: 30px;
+}
+h2{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+#ProductosRecientes ul {
+    display: block;
+    font-family: 'motiva-sans';
+    font-size: 60px;
+    background-color:  rgb(36, 36, 44);
+    text-decoration: none;
+    color: aliceblue;
+    height: 300px;
+}
+
+#ProductosRecientes li {     
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+#ProductosRecientes a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#OpcionesSoporte ul {
+    display: block;
+    font-family: 'motiva-sans';
+    font-size: 60px;
+    background-color:  rgb(36, 36, 44);
+    height: 490px;
+    text-decoration: none;   
+}
+#OpcionesSoporte li {
+    list-style: none;
+}
+#OpcionesSoporte a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/* SOPORTE */
+
