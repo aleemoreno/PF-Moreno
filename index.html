@@ -2,8 +2,9 @@
  <html lang="en">
  <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   <meta name="viewport" content="width=device-width, user-scalable=no, inicitial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="Estilos/style.css">
  
    <title>SteamLowcost</title>
@@ -17,21 +18,35 @@
             <h1 class="Nombre-pagina">Steam Lowcost</h1>
          </div>
     </section>
-  </header>
-     <main>
-       <section id="Secciones"> 
+
+     <section id="Secciones">
+      <nav> 
+       <ul>
+        <li><a href="index.html"><h3>INICIO</h3></a></li>
+       <li><a href="biblioteca.html"><h3>BIBLIOTECA</h3></a></li>
+       <li><a href="Tienda.html"> <h3>TIENDA</h3></a></li>   
+       <li><a href="Comunidad.html"><h3>COMUNIDAD</h3 ></a></li>   
+       <li><a href="Soporte.html"><h3>SOPORTE</h3></a></lis>
+      </nav> 
+    </Section> 
+ 
+
+       <!-- <section id="Secciones"> 
         <nav> 
          <ul>
           <li><a href="index.html"><h3>INICIO</h3></a></li>
           <li><a href="biblioteca.html"><h3>BIBLIOTECA</h3></a></li>
           <li><a href="Tienda.html"> <h3>TIENDA</h3></a></li>   
           <li><a href="Comunidad.html"><h3>COMUNIDAD</h3 ></a></li>   
-          <li><a href="Soporte.html"><h3>SOPORTE</h3></a></lis>
+          <li><a href="Soporte.html"><h3>SOPORTE</h3></a></li>
         </nav> 
-      </Section> 
+      </Section>  -->
+   </header>
+    <main>
+
+      <h2 class="Jrecientes">Jugados recientemente</h2>
 
       <section id="Recientes">
-        <h2>Jugados recientemente</h2>
          <img src="Imagenes/pz.PNG" alt="">
          <img src="Imagenes/cyberpu.png" alt="">
          <img src="Imagenes/dst.png" alt="">
@@ -40,7 +55,7 @@
          <img src="Imagenes/dtranding.png" alt="">
        </section>  
        
-       <section id="ComunidadSecciones">
+        <section id="ComunidadSecciones">
         <nav>
             <ul>
                 <li><a href="">Novedades</a></li>
@@ -48,48 +63,46 @@
                 <li><a href="">Recomendados</a></li>
             </ul>
         </nav>
+        </section> 
        
-    <h2>Novedades</h2>
+         <Section id="Updates">
 
-       <Section id="Updates">
-
-        <div class="card 1">
-          <img src="Imagenes/brawlupdate.PNG" class="card-img-top" alt="">
+        <div class="card">
+         <a href="https://steamcommunity.com/app/291550/"><img src="Imagenes/brawlupdate.PNG" class="card-img-top" alt=""></a>
           <div class="card-body">
-            <h3 class="card-title">PUBLICADO El mie., 10 de enero</h3>
+            <h5 class="card-title-1">PUBLICADO El mie., 10 de enero</h5>
             <p class="card-text">31, RANKED SEASON 31.</p>
-            <a href="#" class="btn btn-primary"></a>
-            <a href="#" class="btn btn-primary">Brawlhalla</a>
+            
           </div>
         </div>
 
        </div>
        <div class="card">
-        <img src="Imagenes/phasmohpobiaupdate.PNG" class="card-img-top" alt="">
+        <a href=""><img src="Imagenes/phasmohpobiaupdate.PNG" class="card-img-top" alt=""></a>
         <div class="card-body">
           <h5 class="card-title">PUBLICADO EL mar., 9 de enero</h5>
-          <p class="card-text">Ascension., Minor Update v0.9.4.0.</p>
-          <a href="#" class="btn btn-primary">Phasmophobia</a>
+          <p class="card-text">Ascension., Minor Update v0.9.1</p>
+          
         </div>
       </div>
       <div class="card">
-        <img src="Imagenes/dbdupdate.PNG" class="card-img-top" alt="">
+        <a href=""><img src="Imagenes/dbdupdate.PNG" class="card-img-top" alt=""></a>
         <div class="card-body">
           <h5 class="card-title">PUBLICADO El lun/. 8 de enero</h5>
           <p class="card-text">Developer Update., January 2024</p>
-          <a href="#" class="btn btn-primary">Dead By Daylight</a>
+          
         </div>
       </div>
-      </section>
-
+      </section> 
+ 
 
  </main>
   
- <footer>
+ <footer class="footer">
   <h5>Valve Software
  © 2023 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
  Todos los precios incluyen IVA (donde sea aplicable).  </h5>
  </footer>
- 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
