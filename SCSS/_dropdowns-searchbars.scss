@@ -1,0 +1,67 @@
+
+
+ /* Flex Container para searchbar y dropdowns */
+
+.searchbarflex-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0px 15px 10px;
+  
+  }
+ 
+  /* Flex Container para searchbar y dropdowns */
+  
+  /* Dropdown */
+
+.dropdown-biblioteca {
+    padding: 20px 50px;
+  
+    .dropdown-menu {
+        padding: 70px; 
+        background-color: rgb(36, 36, 44);   
+    }
+    .dropdown-item {
+        font-size: 50px;
+        padding: 5px ;
+        &:hover {
+        background-color: rgb(36, 36, 44);
+        }
+    }
+    .btn {
+     &.btn-secondary{
+     font-family: 'motiva-sans';
+     padding: 30px 20px;
+     font-size: 50px;
+     background-color:rgb(36, 36, 44);
+      }
+
+   }     
+}
+
+
+
+    
+  
+  /* Dropdown */
+
+  /* Searchbar */
+
+.search-bar {
+    padding: 20px 70px;
+ }
+  
+.form-searchbar {
+     font-size: 50px;
+     padding: 30px 30px;
+     background-color: rgb(36, 36, 44);
+     border-width: 1px;
+     &::placeholder {
+     font-family: 'motiva-sans';
+     color: rgb(254, 255, 255);
+     text-indent: 10px;
+       
+     }
+ }
+    
+   /* Searchbar */

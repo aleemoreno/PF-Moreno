@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: "motiva-sans";
+    src: url("../motiva-sans/MotivaSansRegular.woff.ttf");
+  }
+
+/* Nav principal */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+
+.secciones{
+    background-color: rgb(13, 18, 26);
+    height: 150px;
+    flex-wrap: wrap;
+
+    ul{
+        font-family: 'motiva-sans';
+        background-color: rgb(36, 36, 44);
+        font-size: 50px;
+        line-height: 10px;
+        height: 1px;
+        flex-wrap: wrap;
+
+        li{
+            font-family: 'motiva-sans';
+            font-size: 40px;
+            width: 300px;
+            display: inline-block;
+            line-height: 150px;
+            text-align: center;
+            
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: aliceblue;
+                height: 150px;
+                width: 300px;
+                &:hover {
+                    background-color: #4a6285;
+                }
+            }
+        }
+    }   
+}
+
+
+/* Nav principal */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Nav secundaria */
+
+.comunidadsecciones {
+     
+    ul{
+        font-family: "motiva-sans";
+        background-color: rgb(13, 18, 26);
+        font-size: 40px;
+        line-height: 80px;
+        list-style: none;
+        flex-wrap: wrap;
+        text-align: center;
+    
+        li {
+            font-family: 'motiva-sans';
+            font-size: 30px;
+            width: 300px;
+            display: inline-block;
+            line-height: 100px;
+            text-align: center;
+
+            a {
+                
+                color: aliceblue;
+                display: block;
+                text-decoration: none;
+                &:hover {
+                    background-color: #4a6285;
+
+                }  
+            }
+        }
+    } 
+}
+
+/* Nav secundaria */
+/* --------------------------------------------------------------------------------------------------------------- */

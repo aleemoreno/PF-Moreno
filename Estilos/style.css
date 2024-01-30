@@ -1,454 +1,909 @@
 @font-face {
-    font-family: 'motiva-sans';
-    src: url('../motiva-sans/MotivaSansRegular.woff.ttf');
-  }
-  
-  html {
-    font-size: large;
-  }
-  
-  /* INICIO */
-  
+  font-family: "motiva-sans";
+  src: url("../motiva-sans/MotivaSansRegular.woff.ttf");
+}
+/* Nav principal */
+/* --------------------------------------------------------------------------------------------------------------- */
+.secciones {
+  background-color: rgb(13, 18, 26);
+  height: 150px;
+  flex-wrap: wrap;
+}
+.secciones ul {
+  font-family: "motiva-sans";
+  background-color: rgb(36, 36, 44);
+  font-size: 50px;
+  line-height: 10px;
+  height: 1px;
+  flex-wrap: wrap;
+}
+.secciones ul li {
+  font-family: "motiva-sans";
+  font-size: 40px;
+  width: 300px;
+  display: inline-block;
+  line-height: 150px;
+  text-align: center;
+}
+.secciones ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  height: 150px;
+  width: 300px;
+}
+.secciones ul li a:hover {
+  background-color: #4a6285;
+}
+
+/* Nav principal */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Nav secundaria */
+.comunidadsecciones ul {
+  font-family: "motiva-sans";
+  background-color: rgb(13, 18, 26);
+  font-size: 40px;
+  line-height: 80px;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.comunidadsecciones ul li {
+  font-family: "motiva-sans";
+  font-size: 30px;
+  width: 300px;
+  display: inline-block;
+  line-height: 100px;
+  text-align: center;
+}
+.comunidadsecciones ul li a {
+  color: aliceblue;
+  display: block;
+  text-decoration: none;
+}
+.comunidadsecciones ul li a:hover {
+  background-color: #4a6285;
+}
+
+/* Nav secundaria */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Flex Container para searchbar y dropdowns */
+.searchbarflex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 0px 15px 10px;
+}
+
+/* Flex Container para searchbar y dropdowns */
+/* Dropdown */
+.dropdown-biblioteca {
+  padding: 20px 50px;
+}
+.dropdown-biblioteca .dropdown-menu {
+  padding: 70px;
+  background-color: rgb(36, 36, 44);
+}
+.dropdown-biblioteca .dropdown-item {
+  font-size: 50px;
+  padding: 5px;
+}
+.dropdown-biblioteca .dropdown-item:hover {
+  background-color: rgb(36, 36, 44);
+}
+.dropdown-biblioteca .btn.btn-secondary {
+  font-family: "motiva-sans";
+  padding: 30px 20px;
+  font-size: 50px;
+  background-color: rgb(36, 36, 44);
+}
+
+/* Dropdown */
+/* Searchbar */
+.search-bar {
+  padding: 20px 70px;
+}
+
+.form-searchbar {
+  font-size: 50px;
+  padding: 30px 30px;
+  background-color: rgb(36, 36, 44);
+  border-width: 1px;
+}
+.form-searchbar::placeholder {
+  font-family: "motiva-sans";
+  color: rgb(254, 255, 255);
+  text-indent: 10px;
+}
+
+/* Searchbar */
+/* Cards */
+/* --------------------------------------------------------------------------------------------------------------- */
+#Updates {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 100px 100px 100px 160px;
+  gap: 30px;
+}
+#Updates .card {
+  height: 30%;
+  width: 20%;
+}
+#Updates .card .card-img-top {
+  height: 50%;
+  width: 100%;
+}
+#Updates .card .card-body {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  background-color: #111218;
+}
+#Updates .card .card-title {
+  font-family: "motiva-sans";
+  color: aliceblue;
+  flex-wrap: wrap;
+  font-size: 50px;
+}
+#Updates .card .card-text {
+  font-family: "motiva-sans";
+  color: aliceblue;
+  font-size: 30px;
+}
+
+/* Grid INICIO */
+/* --------------------------------------------------------------------------------------------------------------- */
+.container-juegosrecientes {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 30px 30px 100px 50px;
+}
+.container-juegosrecientes .grid-inicio {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1000px;
+  gap: 30px;
+}
+.container-juegosrecientes .grid-inicio .grid-item1 img {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+.container-juegosrecientes .grid-inicio .grid-item img {
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+.container-juegosrecientes .grid-inicio .grid-item img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Grid INICIO */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Grids TIENDA */
+/* Grid 1 */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 100px 100px 100px;
+}
+.grid-container .producto__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.grid-container .producto__grid img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Grid 1 */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Grid 2 */
+.grid-container2 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 100px 200px 100px;
+}
+.grid-container2 .productodos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.grid-container2 img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Grid 2 */
+/* --------------------------------------------------------------------------------------------------------------- */
+/*Grids TIENDA */
+/* Nav/menu para seccion CUENTA */
+.perfil-nav-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.perfil-nav-menu {
+  padding-left: 0px;
+  height: 100%;
+  background-color: rgb(13, 18, 26);
+  font-size: 50px;
+}
+.perfil-nav-menu ul {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+  width: 1000px;
+  height: 100%;
+  line-height: 160px;
+}
+.perfil-nav-menu ul .perfil-navitem {
+  border-top: solid rgba(28, 77, 129, 0.5568627451);
+  border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+  display: flex;
+  justify-content: left;
+  height: 20%;
+}
+.perfil-nav-menu ul .perfil-navitem:hover {
+  background-color: rgb(40, 54, 77);
+}
+.perfil-nav-menu ul .perfil-navitem a {
+  display: block;
+  margin-left: 130px;
+  font-family: "motiva-sans";
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.h1-contacto {
+  font-size: 50px;
+  padding: 0px 40px 30px 1200px;
+}
+
+.contacto-perfil {
+  display: flex;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  width: 50%;
+}
+.contacto-perfil .contacto-info {
+  flex-direction: column;
+  height: 103%;
+  background-color: rgba(13, 18, 26, 0.938);
+  font-size: 50px;
+  width: 100%;
+}
+.contacto-perfil .contacto-info .contacto-item {
+  border: solid rgb(4, 79, 145);
+  padding: 1px 10px 10px 30px;
+  margin-top: 30px;
+  font-family: "motiva-sans";
+  font-size: 50px;
+}
+
+/* Nav/menu para seccion CUENTA */
+.edit-botton {
+  padding: 60px 10px 60px 0px;
+}
+
+.btn-primary {
+  margin-left: 30px;
+  font-size: 50px;
+  font-family: "motiva-sans";
+  background-color: rgba(27, 30, 32, 0.466);
+  border: none;
+  width: 300px;
+  height: 100px;
+}
+.btn-primary:hover {
+  background-color: rgba(9, 53, 94, 0.568);
+}
+
+@media screen and (max-width: 1920px) {
+  /* INICIO - RESPONSIVE 1080p*/
+  /* Header logos y ttulos */
   .Logo {
     display: flex;
+    height: 100%;
+    width: 500px;
   }
-  .Logo img {
-    width: 300px;
-    display: flex;
+  .Logo h1 {
+    font-family: "motiva-sans";
+    font-size: 150px;
+    margin-top: 10px;
+    margin-right: 500px;
+    margin-left: 50px;
   }
-  
-  .Nombre-pagina {
-    font-family: 'motiva-sans';
-    font-size: 200px;
+  .sub-title {
+    font-family: "motiva-sans";
+    font-size: 75px;
+    margin-left: 50px;
     margin-top: 30px;
-    display: flex;
-  }
-  #Secciones {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #Secciones h1 {
-    font-family: 'motiva-sans';
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-left: -1300px;
-  }
-  #Secciones h2 {
-    font-family: 'motiva-sans';
-    color: aliceblue;
-    font-size: 70px;
-  }
-  #Secciones h3 {
-    font-family: 'motiva-sans';
-    color: aliceblue;
-    font-size: 40px;
-  }
-  #Secciones-2 h3 {
-    font-family: 'motiva-sans';
-    color: aliceblue;
-    font-size: 40px;
-  }
-  #Secciones h3 {
-    color: aliceblue;
-  }
-  body {
-    background-color: #1c1c1c;
-    position: relative;
-  }
-  #Secciones {
-    background-color: rgb(36, 36, 44);
-    height: 180px;
-    flex-wrap: wrap;
-  }
-  #Secciones ul {
-    background-color: rgb(36, 36, 44);
-    font-size: 40px;
-    line-height: 80px;
-    height: 180px;
-    flex-wrap: wrap;
-  }
-  #Secciones li {
-    font-size: 30px;
-    width: 300px;
-    display: inline-block;
-    line-height: 100px;
-    text-align: center;
-  }
-  #Secciones a {
-    display: inline-block;
-    text-decoration: none;
-    color: aliceblue;
-    height: 180px;
-    width: 300px;
-  }
-  
-  a:hover {
-    background-color: #3d3d3d;
-  }
-  #InicioMain p {
-    font-family: 'motiva-sans';
-    color: rgb(211, 217, 223);
-    font-size: 20px;
-  }
-  #InicioMain h2 {
-    font-family: 'motiva-sans';
-    color: aliceblue;
-    font-size: 40px;
-  }
-  #InicioMain img {
-    display: flex;
-    height: 200px;
-    width: 600px;
-  }
-  #InicioMain form {
-    text-align: center;
-    margin-bottom: -35px;
-    margin-left: -1000px;
-  }
-  
-  #Recientes {
-    width: 300px;
-    height: 750px;
-    display: flex;
-    flex-flow: row;
-  }
-  #Recientes img {
-    width: 10000px;
-    height: 700px;
-    flex-wrap: wrap;
-  }
-  .Jrecientes {
-    font-size: 60px;
-    margin-top: 40px;
     margin-bottom: 40px;
   }
-  #Updates {
-    justify-content: flex-start;
+  h2 {
+    font-family: "motiva-sans";
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+  .soporte-h2 {
     flex-wrap: wrap;
-    display: flex;
-  }
-  .card {
-    display: block;
-  }
-  .card-title-1 {
+    font-family: "motiva-sans";
+    justify-content: center;
     font-size: 40px;
-    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
   }
-  .card-img-top {
-    height: 350px;
-    width: 900px;
+  /* Navs */
+  .secciones {
+    background-color: rgb(13, 18, 26);
+    height: 100%;
     flex-wrap: wrap;
   }
-  .card-body {
-    width: 600x;
-    height: 200px;
-    background-color: #202127;
-    display: block;
-  }
-  .card-title {
-    font-family: 'motiva-sans';
-    color: aliceblue;
+  .secciones ul {
+    font-family: "motiva-sans";
+    background-color: rgb(13, 18, 26);
+    line-height: 10px;
+    height: 100%;
     flex-wrap: wrap;
   }
-  .card-text {
-    color: aliceblue;
-  }
-  
-  .dropdown {
-    display: inline-block;
-  }
-  .dropdown button {
-    font-family: 'motiva-sans';
-    font-size: 19px;
-    background-color: rgb(52, 52, 61);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    color: aliceblue;
-  }
-  .dropdown a {
-    display: block;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 10px 15px;
-  }
-  .dropdown .content {
-    font-family: 'motiva-sans';
-    display: none;
-    position: absolute;
-    background-color: rgb(26, 26, 31);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px rgb(26, 26, 31);
-  }
-  .dropdown:hover .content {
-    display: block;
-  }
-  
-  footer {
-    height: 120px;
-    max-width: 100%;
-    margin-top: 600px;
-    position: relative;
-    bottom: 0;
-    background-color: rgb(52, 52, 61);
-  }
-  
-  .carousel-item {
-    width: 3000px;
-    height: 2000px;
-  }
-  
-  /*INICIO*/
-  
-  /*BIBLIOTECA*/
-  #bibliotecajuegos {
-    /*LO MISMO QUE EN COMUNIDAD SECCCIONES*/
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #bibliotecajuegos img {
-    width: 300px;
-    height: 500px;
-  }
-  
-  /*BIBLIOTECA*/
-  
-  /* TIENDA */
-  .subtitulo__tienda{
-      font-size: 5000px;
-  }
-  
-  body {
-    flex-wrap: wrap;
-  }
-  
-  #Tienda {
-    font-size: 100px;
-    flex-wrap: wrap;
-  }
-  #Tienda h1 {
-    font-family: 'motiva-sans';
-    font-size: 100px;
-    color: rgb(255, 255, 255);
-  }
-  
-  #TiendaPrincipal h1 {
-    color: aliceblue;
-    font-size: 100px;
-    margin-left: 10px;
-  }
-  #TiendaPrincipal form {
-    text-align: center;
-    margin-left: -700px;
-    margin-top: -38px;
-  }
-  body {
-    background-color: #1c1c1c;
-    position: relative;
-    bottom: 0;
-  }
-  
-  .grid-container {
-    display: flex;
-    justify-content: center; 
-  }
-  .producto__grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-  
-  /*ESTO A CAMBIAR*/
-  img {
-    width: 100%;
-    height: 152%;
-  }
-  
-  /* .uno {
-      grid-column: 1 / 3;
-      grid-row: 1 / 3;
-  }
-  .dos {
-     grid-column: 3 / 4;
-     grid-row:  1 / 3;
-     
-  }
-  .tres {
-      grid-column: 4 / 5;
-      grid-row: 1 / 3;
-      
-  } */
-  
-  
-  /* .cuatro {
-    grid-column: 1 / 1;
-    grid-row: 1 / 4;
-    height: 800px;
-    width: 1250px;
-  }
-  .cinco {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    height: 800px;
-  }
-  
-  .seis {
-    grid-column: 3 / 4;
-    grid-row: 1 / 4;
-    height: 800px;
-  }
-  
-  .siete {
-    grid-column: 4 / 5;
-    grid-row: 1 / 4;
-    height: 800px;
-  } */
-  
-  /* TIENDA */
-  
-  /* CATEGORIAS */
-  
-  body {
-    background-color: black;
-    font-family: 'motiva-sans';
-  }
-  
-  #Generos ul {
-    background-color: rgb(36, 36, 44);
-    list-style: none;
-  }
-  #Generos li {
-    display: flex;
-    color: aliceblue;
-  }
-  #Generos a {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  .nav1 {
-    display: flex;
-  }
-  .nav2 {
-    display: flex;
-  }
-  .nav3 {
-    display: flex;
-  }
-  .nav4 {
-    display: flex;
-  }
-  .nav5 {
-    display: flex;
-  }
-  /* CATEGORIAS */
-  
-  /* COMUNIDAD */
-  body {
-    background-color: black;
-    font-family: 'motiva-sans';
-  }
-  body H1 {
-    font-size: 100px;
-  }
-  p {
-    font-size: 50px;
-  }
-  #ComunidadSecciones {
-    /*fijarse el widht en responsive... en responsive baja*/
-    width: 100%;
-    margin: 50px 0px 50px 0px;
-    background-color: #d9cf3fda;
-  }
-  #ComunidadSecciones ul {
-    font-family: 'motiva-sans';
-    background-color: rgb(36, 36, 44);
-    font-size: 40px;
-    line-height: 80px;
-    list-style: none;
-    flex-wrap: wrap;
-  }
-  #ComunidadSecciones li {
-    font-size: 30px;
-    width: 300px;
+  .secciones ul li {
+    font-family: "motiva-sans";
+    font-size: 25px;
+    width: 10%;
+    height: 100px;
     display: inline-block;
     line-height: 100px;
     text-align: center;
   }
-  #ComunidadSecciones a {
-    display: block;
+  .secciones ul li a {
+    display: inline-block;
     text-decoration: none;
     color: aliceblue;
+    height: 100%;
+    width: 100%;
   }
-  a:hover {
-    background-color: rgb(62, 62, 85);
+  .secciones ul li a:hover {
+    background-color: #4a6285;
   }
-  
-  /* COMUNIDAD */
-  
-  /* SOPORTE */
-  
-  body {
-    background-color: #1c1c1c;
-    font-family: 'motiva-sans';
-    color: aliceblue;
-  }
-  
-  h1 {
-    font-size: 50px;
-    margin-left: 30px;
-  }
-  
-  #ProductosRecientes ul {
-    display: block;
-    font-family: 'motiva-sans';
-    font-size: 60px;
-    background-color: rgb(36, 36, 44);
-    text-decoration: none;
-    color: aliceblue;
-    height: 300px;
-  }
-  
-  #ProductosRecientes li {
+  .comunidadsecciones ul {
+    font-family: "motiva-sans";
+    background-color: rgb(13, 18, 26);
+    font-size: 40px;
+    line-height: 80px;
     list-style: none;
-    text-decoration: none;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .comunidadsecciones ul li {
+    font-family: "motiva-sans";
+    font-size: 25px;
+    width: 15%;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+  }
+  .comunidadsecciones ul li a {
     color: aliceblue;
     display: block;
-  }
-  #ProductosRecientes a {
     text-decoration: none;
-    color: aliceblue;
   }
-  #OpcionesSoporte ul {
-    display: block;
-    font-family: 'motiva-sans';
-    font-size: 60px;
+  .comunidadsecciones ul li a:hover {
+    background-color: #4a6285;
+  }
+  /* Navs */
+  /* Grids */
+  .container-juegosrecientes {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 30px 30px 100px 50px;
+  }
+  .container-juegosrecientes .grid-inicio {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 30px;
+  }
+  .container-juegosrecientes .grid-inicio .grid-item1 img {
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .container-juegosrecientes .grid-inicio .grid-item img {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .container-juegosrecientes .grid-inicio .grid-item img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  /* Grids */
+  /* Cards */
+  #Updates {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 100px 100px 100px 160px;
+    gap: 30px;
+  }
+  #Updates .card {
+    height: 100%;
+    width: 20%;
+  }
+  #Updates .card .card-img-top {
+    height: 100%;
+    width: 100%;
+  }
+  #Updates .card .card-body {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 150px;
+    background-color: #111218;
+  }
+  #Updates .card .card-title {
+    font-family: "motiva-sans";
+    color: aliceblue;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+  #Updates .card .card-text {
+    font-family: "motiva-sans";
+    color: aliceblue;
+    font-size: 15px;
+  }
+  /* Cards */
+  /* Searchbar y Dropdown */
+  .searchbarflex-container {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0px 15px 10px;
+  }
+  .dropdown-biblioteca {
+    padding: 0px 50px;
+  }
+  .dropdown-biblioteca .dropdown-menu {
+    padding: 70px;
     background-color: rgb(36, 36, 44);
-    height: 490px;
-    text-decoration: none;
   }
-  #OpcionesSoporte li {
-    list-style: none;
+  .dropdown-biblioteca .dropdown-item {
+    display: flex;
+    font-size: 30px;
+    padding: 5px;
   }
-  #OpcionesSoporte a {
-    text-decoration: none;
-    color: aliceblue;
+  .dropdown-biblioteca .dropdown-item:hover {
+    background-color: rgb(36, 36, 44);
   }
-  
-  /* SOPORTE */
-  
-  @media (max-width: 1065px) {
-    .producto__grid {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .dropdown-biblioteca .btn.btn-secondary {
+    font-family: "motiva-sans";
+    padding: 30px 20px;
+    font-size: 30px;
+    background-color: rgb(36, 36, 44);
   }
-  
-  .tarjeta__producto {
-    width: 400px;
+  .search-bar {
+    padding: 0px 50px;
+  }
+  .form-searchbar {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    padding: 35px 30px;
+    background-color: rgb(36, 36, 44);
+    border-width: 1px;
+  }
+  .form-searchbar::placeholder {
+    font-family: "motiva-sans";
+    color: rgb(254, 255, 255);
+    text-indent: 10px;
+  }
+  /* Searchbar y Dropdown */
+  /* INICIO - RESPONSIVE 1080p*/
+  /* BIBLIOTECA - RESPONSIVE 1080p */
+  .bibliotecajuegos {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bibliotecajuegos img {
+    width: 20%;
+    height: 10%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .bibliotecajuegos img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  /* BIBLIOTECA - RESPONSIVE 1080p */
+  /* CUENTA - RESPONSIVE 1080p */
+  .seccion-perfil-container {
+    padding: 100px 100px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+  }
+  .perfil-header {
+    justify-content: center;
+    display: flex;
+    padding: 60px 100px 50px 100px;
+    width: 100px;
+    background-color: rgb(29, 133, 224);
+  }
+  .perfil-header .avatar-img {
+    display: flex;
+    height: 100%;
+  }
+  .perfil-header .perfil-bio {
+    padding: 50px 10px 10px 10px;
+  }
+  .perfil-header h3 {
+    flex-wrap: wrap;
+    line-height: 1px;
+    padding: 0px 30px;
+    font-size: 70px;
+  }
+  .perfil-header h5 {
+    line-height: 150px;
+    padding: 0px 40px;
+    font-size: 25px;
+  }
+  .perfil-header p {
+    padding: 0px 30px;
+    font-size: 30px;
+  }
+  .perfil-nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1000px;
+    width: 100%;
+    height: 500px;
+  }
+  .perfil-nav-menu {
+    height: 500px;
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+  }
+  .perfil-nav-menu ul {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    width: 700px;
     height: 600px;
+    line-height: 100px;
   }
-  
-  
-  
+  .perfil-nav-menu ul .perfil-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    justify-content: left;
+    width: 700px;
+    height: 100px;
+  }
+  .perfil-nav-menu ul .perfil-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .perfil-nav-menu ul .perfil-navitem a {
+    display: block;
+    width: 100%;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .h1-contacto {
+    font-size: 35px;
+    padding: 0px 40px 30px 900px;
+  }
+  .contacto-perfil {
+    display: flex;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    width: 10000px;
+  }
+  .contacto-perfil .contacto-info {
+    flex-direction: column;
+    height: 400px;
+    background-color: rgba(13, 18, 26, 0.938);
+    font-size: 50px;
+    width: 700px;
+  }
+  .contacto-perfil .contacto-info .contacto-item {
+    border: solid rgb(4, 79, 145);
+    padding: 1px 10px 10px 30px;
+    margin-top: 0px;
+    font-family: "motiva-sans";
+    font-size: 30px;
+  }
+  /* Nav/menu para seccion CUENTA */
+  .edit-botton {
+    padding: 30px 10px 60px 0px;
+  }
+  .btn-primary {
+    padding: 10px 0px;
+    font-size: 30px;
+    font-family: "motiva-sans";
+    background-color: rgba(27, 30, 32, 0.466);
+    border: none;
+    width: 200px;
+    height: 70px;
+  }
+  .btn-primary:hover {
+    background-color: rgba(9, 53, 94, 0.568);
+  }
+  .productos-recientes-container {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+  }
+  .productos-recientes-container .productos-recientes-menu {
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+    flex-wrap: wrap;
+  }
+  .productos-recientes-container .productos-recientes-menu ul {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    width: 700px;
+    height: 100%;
+    line-height: 100px;
+  }
+  .productos-recientes-container .productos-recientes-menu ul .productoreciente-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    justify-content: left;
+    width: 700px;
+    height: 100px;
+  }
+  .productos-recientes-container .productos-recientes-menu ul .productoreciente-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .productos-recientes-container .productos-recientes-menu ul .productoreciente-navitem a {
+    display: block;
+    width: 100%;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .soporte-flex-container {
+    display: flex;
+    width: 100%;
+  }
+  .soporte-flex-container .steam-support-menu {
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+  }
+  .soporte-flex-container .steam-support-menu ul {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    width: 700px;
+    height: 100%;
+    line-height: 100px;
+  }
+  .soporte-flex-container .steam-support-menu ul .support-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    justify-content: left;
+    width: 700px;
+    height: 100px;
+  }
+  .soporte-flex-container .steam-support-menu ul .support-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .soporte-flex-container .steam-support-menu ul a {
+    display: block;
+    width: 100%;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+}
+/* CUENTA - RESPONSIVE 1080p */
+@font-face {
+  font-family: "motiva-sans";
+  src: url("../motiva-sans/MotivaSansRegular.woff.ttf");
+}
+/* FONTS */
+.Logo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.Logo h1 {
+  font-family: "motiva-sans";
+  font-size: 130px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sub-title {
+  font-family: "motiva-sans";
+  font-size: 60px;
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: "motiva-sans";
+  font-size: 40px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+/* FONTS */
+/* ---------------------------------------------------*/
+/* COLORES DE LA PAGINA */
+header {
+  background: linear-gradient(to left, #000000, rgba(0, 0, 0, 0.1568627451));
+}
+
+body {
+  background: linear-gradient(to left, #1d2b3a, rgba(0, 0, 0, 0.1450980392));
+}
+
+/* COLORES DE LA PAGINA */
+/* ---------------------------------------------------*/
+/* INICIO */
+/* INICIO */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Biblioteca */
+.bibliotecajuegos {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.bibliotecajuegos img {
+  width: 15%;
+  height: 10%;
+  transition: 1s;
+  cursor: pointer;
+}
+.bibliotecajuegos img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Biblioteca */
+/* SOPORTE */
+.productos-recientes-container {
+  display: flex;
+  padding: 30px 10px 10px 100px;
+}
+
+.productos-recientes-menu {
+  width: 55\%;
+  background-color: rgb(13, 18, 26);
+  font-size: 50px;
+}
+.productos-recientes-menu ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+  width: 100%;
+  height: 110%;
+  line-height: 160px;
+}
+.productos-recientes-menu ul .productoreciente-navitem {
+  border-top: solid rgba(28, 77, 129, 0.5568627451);
+  border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+  display: flex;
+  justify-content: left;
+  width: 2000px;
+  height: 15%;
+}
+.productos-recientes-menu ul .productoreciente-navitem:hover {
+  background-color: rgb(40, 54, 77);
+}
+.productos-recientes-menu ul .productoreciente-navitem a {
+  display: block;
+  margin-left: 130px;
+  font-family: "motiva-sans";
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.soporte-flex-container {
+  display: flex;
+  justify-content: left;
+  padding: 40px 100px 100px 100px;
+}
+
+.steam-support-menu {
+  background-color: rgb(13, 18, 26);
+  font-size: 60px;
+}
+.steam-support-menu ul {
+  padding-left: 0px;
+  width: 2000px;
+  height: 1980px;
+  line-height: 250px;
+}
+.steam-support-menu ul .support-navitem {
+  border-top: solid rgba(28, 77, 129, 0.5568627451);
+  border-bottom: solid #1d2b3a;
+  display: flex;
+  justify-content: left;
+  height: 250px;
+}
+.steam-support-menu ul .support-navitem:hover {
+  background-color: rgb(37, 51, 73);
+}
+.steam-support-menu ul a {
+  display: block;
+  margin-left: 100px;
+  font-family: "motiva-sans";
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* CUENTA */
+.seccion-perfil-container {
+  padding: 100px 100px 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.seccion-perfil-container .perfil-header {
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  padding: 60px 100px 50px 100px;
+  background-color: aliceblue;
+}
+.seccion-perfil-container .perfil-header .avatar-img {
+  display: flex;
+  height: 100%;
+}
+.seccion-perfil-container .perfil-header .perfil-bio {
+  padding: 50px 10px 10px 10px;
+}
+.seccion-perfil-container .perfil-header h3 {
+  flex-wrap: wrap;
+  line-height: 1px;
+  padding: 0px 30px;
+  font-size: 70px;
+}
+.seccion-perfil-container .perfil-header h5 {
+  line-height: 150px;
+  padding: 0px 40px;
+  font-size: 25px;
+}
+.seccion-perfil-container .perfil-header p {
+  padding: 0px 30px;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

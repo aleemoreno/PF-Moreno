@@ -1,0 +1,233 @@
+
+@use 'navs';
+@use 'dropdowns-searchbars';
+@use 'cards';
+@use 'grids';
+@use 'accordion.scss';
+@use 'responsive.scss';
+
+@font-face {
+    font-family: "motiva-sans";
+    src: url("../motiva-sans/MotivaSansRegular.woff.ttf");
+}
+
+/* FONTS */
+.Logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+      
+    h1 {      
+      font-family: "motiva-sans";
+      font-size: 130px;
+      padding: 10px 10px 10px 10px;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      margin-right: 10px;
+      margin-left: 10px;
+        
+    }
+}
+
+.sub-title {
+  font-family: 'motiva-sans';
+  font-size: 60px;
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  
+}
+h2 {
+  font-family: 'motiva-sans';
+  font-size: 40px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+
+/* FONTS */
+/* ---------------------------------------------------*/
+/* COLORES DE LA PAGINA */
+
+$color-header:rgb(1, 5, 10);
+$color-body: #1d2b3a;
+
+header {
+  background: linear-gradient(to left,#000000, #00000028)
+}
+body {
+    background: linear-gradient(to left,#1d2b3a, #00000025);
+  }
+
+/* COLORES DE LA PAGINA */
+/* ---------------------------------------------------*/
+/* INICIO */
+
+
+/* INICIO */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Biblioteca */
+
+.bibliotecajuegos {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+   img {
+    width: 15%;
+    height: 10%;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.1);
+      transition: 1s;
+    } 
+    cursor: pointer;
+  }
+}
+
+/* Biblioteca */
+
+/* SOPORTE */
+
+
+
+  .productos-recientes-container {
+    display: flex;
+
+    padding: 30px 10px 10px 100px;
+}
+
+.productos-recientes-menu {
+    width: 55\%;
+    background-color: rgb(13, 18, 26); 
+    font-size: 50px;
+     
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+        width: 100%;
+        height: 110%;
+        line-height: 160px;
+
+        .productoreciente-navitem {
+          border-top: solid #1c4d818e;;
+          border-bottom: solid #1c4d818e;;
+          display: flex;
+          justify-content: left;
+          width: 2000px;
+          height: 15%;
+          &:hover {
+            background-color: rgb(40, 54, 77);
+            }
+            
+            a {
+                display: block;
+                margin-left: 130px;
+                font-family: 'motiva-sans';
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+
+.soporte-flex-container {
+    display: flex;
+    justify-content: left;
+    padding: 40px  100px 100px 100px ;  
+    
+}    
+
+.steam-support-menu {
+ background-color: rgb(13, 18, 26);  
+ font-size: 60px;
+ 
+    ul {
+        padding-left: 0px;
+        width: 2000px;
+        height: 1980px;
+        line-height: 250px;
+        
+
+        .support-navitem {
+          border-top: solid #1c4d818e;;
+          border-bottom: solid #1d2b3a;;
+          display: flex;
+          justify-content: left;
+          height: 250px;
+          &:hover {
+            background-color: rgb(37, 51, 73);
+            }   
+     }
+        
+         a {
+         display: block;
+         margin-left: 100px;
+         font-family: 'motiva-sans';
+         text-decoration: none;
+         color: aliceblue;
+        
+           
+         }
+    } 
+            
+}
+
+
+/* CUENTA */
+
+.seccion-perfil-container {
+  
+   padding: 100px 100px 100px 100px ;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   
+
+   .perfil-header {
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 60px 100px 50px 100px;
+    background-color: aliceblue;
+
+    .avatar-img {
+      display: flex;
+      height: 100%;
+
+    }
+    .perfil-bio {
+     padding: 50px 10px 10px 10px;
+
+    }
+     
+    h3 {
+      flex-wrap: wrap;
+      line-height: 1px;
+      padding: 0px 30px;
+      font-size: 70px;
+    }
+    
+    h5 {
+      line-height: 150px;
+      padding: 0px 40px;
+      font-size: 25px;
+
+    }
+    p {
+      padding: 0px 30px;
+      font-size: 30px;
+    }
+  } 
+}
+
+
+
+

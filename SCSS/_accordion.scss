@@ -1,0 +1,99 @@
+
+    
+/* Nav/menu para seccion CUENTA */
+
+.perfil-nav-container{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.perfil-nav-menu {
+    padding-left: 0px;
+    height: 100%;
+    background-color: rgb(13, 18, 26); 
+    font-size: 50px;
+     
+    ul {
+        padding-bottom: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+        width: 1000px;
+        height: 100%;
+        line-height: 160px;
+
+        .perfil-navitem {
+            border-top: solid #1c4d818e;;
+            border-bottom: solid #1c4d818e;;
+            display: flex;
+            justify-content: left;
+            height: 20%;
+            &:hover {
+              background-color: rgb(40, 54, 77);
+              }
+            
+            a {
+                display: block;
+                margin-left: 130px;
+                font-family: 'motiva-sans';
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+
+.h1-contacto {
+   font-size: 50px;
+   padding: 0px 40px 30px 1200px;
+
+}
+
+.contacto-perfil {
+    display: flex;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    width: 50%;
+
+     .contacto-info {
+         flex-direction: column;
+         height: 103%;
+         background-color: rgba(13, 18, 26, 0.938); 
+         font-size: 50px;
+         width: 100%;
+
+
+         .contacto-item {
+            border: solid rgb(4, 79, 145);
+            padding: 1px 10px 10px 30px;
+            margin-top: 30px;
+            font-family: 'motiva-sans';
+            font-size: 50px;
+         }
+
+    }
+}
+
+
+
+/* Nav/menu para seccion CUENTA */
+
+.edit-botton {
+    padding: 60px 10px 60px 0px;
+    
+}
+.btn-primary {
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: 'motiva-sans';
+    background-color: rgba(27, 30, 32, 0.466);
+    border: none;
+    width: 300px;
+    height: 100px;
+    &:hover {
+        background-color: rgba(9, 53, 94, 0.568);
+    }
+}
