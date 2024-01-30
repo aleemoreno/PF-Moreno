@@ -31,17 +31,20 @@
 
 .sub-title {
   font-family: 'motiva-sans';
-  font-size: 60px;
   margin-left: 60px;
   margin-top: 50px;
   margin-bottom: 40px;
-  
+  font-size: 50px; 
 }
-h2 {
+
+.main-h2 {
+  display: flex;
+
   font-family: 'motiva-sans';
   font-size: 40px;
   margin-left: 60px;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 
