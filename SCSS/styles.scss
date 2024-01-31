@@ -53,13 +53,13 @@
 /* COLORES DE LA PAGINA */
 
 $color-header:rgb(1, 5, 10);
-$color-body: #1d2b3a;
+$color-body: #375c83;
 
 header {
-  background: linear-gradient(to left,#000000, #00000028)
+  background: $color-header;
 }
 body {
-    background: linear-gradient(to left,#1d2b3a, #00000025);
+    background: $color-body;
   }
 
 /* COLORES DE LA PAGINA */
@@ -105,7 +105,7 @@ body {
 }
 
 .productos-recientes-menu {
-    width: 55\%;
+    width: 55%;
     background-color: rgb(13, 18, 26); 
     font-size: 50px;
      

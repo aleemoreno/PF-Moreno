@@ -179,7 +179,7 @@ h2 {
         }
         .card-body {
             flex-wrap: wrap;
-            width: 70%;
+            width: 100%;
             height: 150px;
             background-color: #111218;
         }
@@ -526,9 +526,10 @@ h2 {
 }
 /* CUENTA - RESPONSIVE 1080p */
 
+/* RESPONSIVE 480px */
 
 @media screen and (max-width: 480px) {
-    
+
     .Logo {
         display: flex;
         flex-wrap: wrap;
@@ -643,6 +644,7 @@ h2 {
     
         .grid-inicio {
             margin: auto;
+            padding: auto;
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
@@ -650,6 +652,7 @@ h2 {
             .grid-item1 {
     
                 img {
+
                     width: 400px;
                     height: 600px;
                     transition: 1s;
@@ -711,28 +714,29 @@ h2 {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        width: 200%; /* Ancho al 100% para que se ajuste al contenedor */
-        padding: 10px;
-        padding-bottom: 500px; /* Ajusta el relleno según sea necesario */
+        justify-content: center;
+        width: 100%; 
+        padding: 0px;
+        padding-bottom: 500px; 
     
         .card {
-            margin: 10px; /* Márgenes para separar las tarjetas */
-            width: calc(50% - 20px); /* Ancho del 50% del contenedor con márgenes */
+            margin: 0px; 
+            width:100%; 
             display: flex;
             flex-direction: column;
-            gap: 10px; /* Espacio entre elementos dentro de la tarjeta */
+            gap: 10px; 
     
             .card-img-top {
-                width: 100%; /* Ocupa todo el ancho disponible en la tarjeta */
-                height: auto; /* Altura automática según el ancho */
+                width: 100%; 
+                height: auto; 
                 margin: 0;
-                margin-bottom: 0px; /* Elimina los márgenes predeterminados */
+                margin-bottom: 0px; 
                 transition: 1s;
                 cursor: pointer;
             }
     
             .card-body {
-                flex-grow: 1; /* Permite que el cuerpo de la tarjeta se expanda para ocupar el espacio restante */
+                flex-grow: 1; 
                 background-color: #111218;
             }
     
@@ -787,6 +791,274 @@ h2 {
         }
     }
 }
+
+.seccion-perfil-container {
+    width: auto;
+    background-color: yellow;
+    display: flex;
+} 
+ 
+    .perfil-header {
+     display: flex;
+     background-color: rgb(255, 255, 255);
+     width: auto;
+   
+ 
+     .perfil-bio {
+      text-align: left;
+ 
+     }
+      
+     h3 {
+       margin: auto;
+       font-size: 10px;
+     }
+     
+     h5 {
+       line-height: 150px;
+       padding: 0px 40px;
+       font-size: 5px;
+ 
+     }
+     p {
+       padding: 0px 30px;
+       font-size: 5px;
+     }
+   } 
+ 
+ 
+   .perfil-nav-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    padding: 0;
+}
+
+.perfil-nav-menu {
+    height: 10%;
+    background-color: rgb(13, 18, 26); 
+    font-size: 30px;
+    
+    ul {
+        list-style-type: none;
+        width: 100%;
+        height: 100%; 
+        padding: 0; 
+        
+        .perfil-navitem {
+            border-top: solid #1c4d818e;
+            border-bottom: solid #1c4d818e;
+            display: flex;
+            align-items: center; 
+            width: auto;
+            height: 100px;
+            font-size: 20px;
+            margin: 0;
+            
+            &:hover {
+                background-color: rgb(40, 54, 77);
+            }
+            
+            a {
+                display: block;
+                font-family: 'motiva-sans';
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+.h1-contacto {
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    margin-left: 0;
+    padding-top: 10px;
+
+ 
+ }
+ 
+ .contacto-perfil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+
+ 
+      .contacto-info {
+          flex-direction: column;
+          height: 400px;
+          background-color: rgba(13, 18, 26, 0.938); 
+          font-size: 50px;
+          width: 480px;
+ 
+ 
+          .contacto-item {
+            border-top: solid #1c4d818e;
+            border-bottom: solid #1c4d818e;
+             padding: 1px 10px 10px 30px;
+             width: 480px;
+             margin-top: 0px;
+             font-family: 'motiva-sans';
+             font-size: 20px;
+         }
+ 
+     }
+ }
+ 
+ /* SOPORTE RESPONSIVE 480px */
+
+ .soporte-h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'motiva-sans';
+    justify-content: left;
+    font-size: 20px;
+    margin: 10px 10px 0px 10px;
+  }
+
+  .productos-recientes-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.productos-recientes-menu {
+    justify-content: center;
+    display: flex;
+    background-color: rgb(13, 18, 26); 
+    font-size: 30px;
+    width: 100%; 
+
+    ul {
+        list-style-type: none;
+        padding: 0; 
+        width: 100%;
+
+        .productoreciente-navitem {
+            border-top: solid #1c4d818e;
+            border-bottom: solid #1c4d818e;
+            font-size: 20px;
+            max-width: 100%;
+            width: 100%;
+            &:hover {
+                background-color: rgb(40, 54, 77);
+            }
+
+            a {
+                display: block;
+                font-family: 'motiva-sans';
+                text-decoration: none;
+                color: aliceblue;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.soporte-flex-container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    
+    .steam-support-menu {
+        background-color: rgb(13, 18, 26);  
+        font-size: 15px;
+        width: 100%; 
+        
+        ul {
+            padding-left: 0px;
+            width: 100%; 
+            
+            .support-navitem {
+                border-top: solid #1c4d818e;
+                border-bottom: solid #1d2b3a;
+                display: flex;
+                max-width: 100%;
+                width: 100%; 
+                &:hover {
+                    background-color: rgb(37, 51, 73);
+                }   
+                
+                a {
+                    display: block;
+                    font-family: 'motiva-sans';
+                    text-decoration: none;
+                    color: aliceblue;
+                }
+            }
+        }          
+    } 
+}
+/* CUENTA */
+
+.seccion-perfil-container {
+  
+   padding: 100px 100px 100px 100px ;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   
+
+   .perfil-header {
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 60px 100px 50px 100px;
+    background-color: aliceblue;
+
+    .avatar-img {
+      display: flex;
+      height: 100%;
+
+    }
+    .perfil-bio {
+     padding: 50px 10px 10px 10px;
+
+    }
+     
+    h3 {
+      flex-wrap: wrap;
+      line-height: 1px;
+      padding: 0px 30px;
+      font-size: 70px;
+    }
+    
+    h5 {
+      line-height: 150px;
+      padding: 0px 40px;
+      font-size: 25px;
+
+    }
+    p {
+      padding: 0px 30px;
+      font-size: 30px;
+    }
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "motiva-sans";
   src: url("../motiva-sans/MotivaSansRegular.woff.ttf");
@@ -455,7 +454,7 @@
   }
   #Updates .card .card-body {
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     height: 150px;
     background-color: #111218;
   }
@@ -725,6 +724,7 @@
   }
 }
 /* CUENTA - RESPONSIVE 1080p */
+/* RESPONSIVE 480px */
 @media screen and (max-width: 480px) {
   .Logo {
     display: flex;
@@ -821,6 +821,7 @@
   }
   .container-juegosrecientes .grid-inicio {
     margin: auto;
+    padding: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -870,27 +871,28 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    width: 200%; /* Ancho al 100% para que se ajuste al contenedor */
-    padding: 10px;
-    padding-bottom: 500px; /* Ajusta el relleno según sea necesario */
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 500px;
   }
   #Updates .card {
-    margin: 10px; /* Márgenes para separar las tarjetas */
-    width: calc(50% - 20px); /* Ancho del 50% del contenedor con márgenes */
+    margin: 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre elementos dentro de la tarjeta */
+    gap: 10px;
   }
   #Updates .card .card-img-top {
-    width: 100%; /* Ocupa todo el ancho disponible en la tarjeta */
-    height: auto; /* Altura automática según el ancho */
+    width: 100%;
+    height: auto;
     margin: 0;
-    margin-bottom: 0px; /* Elimina los márgenes predeterminados */
+    margin-bottom: 0px;
     transition: 1s;
     cursor: pointer;
   }
   #Updates .card .card-body {
-    flex-grow: 1; /* Permite que el cuerpo de la tarjeta se expanda para ocupar el espacio restante */
+    flex-grow: 1;
     background-color: #111218;
   }
   #Updates .card .card-title, #Updates .card .card-text {
@@ -932,6 +934,215 @@
     height: 300px;
     width: 400px;
     transition: 1s;
+  }
+  .seccion-perfil-container {
+    width: auto;
+    background-color: yellow;
+    display: flex;
+  }
+  .perfil-header {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+  }
+  .perfil-header .perfil-bio {
+    text-align: left;
+  }
+  .perfil-header h3 {
+    margin: auto;
+    font-size: 10px;
+  }
+  .perfil-header h5 {
+    line-height: 150px;
+    padding: 0px 40px;
+    font-size: 5px;
+  }
+  .perfil-header p {
+    padding: 0px 30px;
+    font-size: 5px;
+  }
+  .perfil-nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    padding: 0;
+  }
+  .perfil-nav-menu {
+    height: 10%;
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+  }
+  .perfil-nav-menu ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .perfil-nav-menu ul .perfil-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    font-size: 20px;
+    margin: 0;
+  }
+  .perfil-nav-menu ul .perfil-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .perfil-nav-menu ul .perfil-navitem a {
+    display: block;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .h1-contacto {
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+  .contacto-perfil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .contacto-perfil .contacto-info {
+    flex-direction: column;
+    height: 400px;
+    background-color: rgba(13, 18, 26, 0.938);
+    font-size: 50px;
+    width: 480px;
+  }
+  .contacto-perfil .contacto-info .contacto-item {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    padding: 1px 10px 10px 30px;
+    width: 480px;
+    margin-top: 0px;
+    font-family: "motiva-sans";
+    font-size: 20px;
+  }
+  /* SOPORTE RESPONSIVE 480px */
+  .soporte-h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "motiva-sans";
+    justify-content: left;
+    font-size: 20px;
+    margin: 10px 10px 0px 10px;
+  }
+  .productos-recientes-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .productos-recientes-menu {
+    justify-content: center;
+    display: flex;
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+    width: 100%;
+  }
+  .productos-recientes-menu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  .productos-recientes-menu ul .productoreciente-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    font-size: 20px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .productos-recientes-menu ul .productoreciente-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .productos-recientes-menu ul .productoreciente-navitem a {
+    display: block;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+    width: 100%;
+  }
+  .soporte-flex-container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+  }
+  .soporte-flex-container .steam-support-menu {
+    background-color: rgb(13, 18, 26);
+    font-size: 15px;
+    width: 100%;
+  }
+  .soporte-flex-container .steam-support-menu ul {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .soporte-flex-container .steam-support-menu ul .support-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid #1d2b3a;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+  }
+  .soporte-flex-container .steam-support-menu ul .support-navitem:hover {
+    background-color: rgb(37, 51, 73);
+  }
+  .soporte-flex-container .steam-support-menu ul .support-navitem a {
+    display: block;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+  /* CUENTA */
+  .seccion-perfil-container {
+    padding: 100px 100px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .seccion-perfil-container .perfil-header {
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 60px 100px 50px 100px;
+    background-color: aliceblue;
+  }
+  .seccion-perfil-container .perfil-header .avatar-img {
+    display: flex;
+    height: 100%;
+  }
+  .seccion-perfil-container .perfil-header .perfil-bio {
+    padding: 50px 10px 10px 10px;
+  }
+  .seccion-perfil-container .perfil-header h3 {
+    flex-wrap: wrap;
+    line-height: 1px;
+    padding: 0px 30px;
+    font-size: 70px;
+  }
+  .seccion-perfil-container .perfil-header h5 {
+    line-height: 150px;
+    padding: 0px 40px;
+    font-size: 25px;
+  }
+  .seccion-perfil-container .perfil-header p {
+    padding: 0px 30px;
+    font-size: 30px;
   }
 }
 @font-face {
@@ -975,11 +1186,11 @@
 /* ---------------------------------------------------*/
 /* COLORES DE LA PAGINA */
 header {
-  background: linear-gradient(to left, #000000, rgba(0, 0, 0, 0.1568627451));
+  background: rgb(1, 5, 10);
 }
 
 body {
-  background: linear-gradient(to left, #1d2b3a, rgba(0, 0, 0, 0.1450980392));
+  background: #375c83;
 }
 
 /* COLORES DE LA PAGINA */
@@ -1015,7 +1226,7 @@ body {
 }
 
 .productos-recientes-menu {
-  width: 55\%;
+  width: 55%;
   background-color: rgb(13, 18, 26);
   font-size: 50px;
 }
