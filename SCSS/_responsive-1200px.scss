@@ -1,0 +1,312 @@
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+
+
+    /* INICIO */
+
+    .menu_hamburguesa {
+        display: none;
+    } 
+
+    #menu_hamburguesa {
+        display: none;
+    }
+    
+    .secciones{
+      background-color: rgb(13, 18, 26);
+      height: 100%;
+      flex-wrap: wrap;
+      
+      .secciones-menu {
+        font-family: 'motiva-sans';
+        background-color: rgb(13, 18, 26);
+        line-height: 10px;
+        height: 100%;
+        flex-wrap: wrap;
+        
+        li {
+          font-family: 'motiva-sans';
+          font-size: 25px;
+          width: 15%;
+          height: 100px;
+          display: inline-block;
+          line-height: 100px;
+          text-align: center;
+          
+          a {
+            display: inline-block;
+            text-decoration: none;
+            color: aliceblue;
+            height: 100%;
+            width: 100%;
+            
+            &:hover {
+              background-color: #4a6285;
+            }
+          }
+        }
+      }
+    }
+    
+
+    .container-juegosrecientes {
+        flex-wrap: wrap;
+        display: flex;
+        padding: 30px 30px 250px 30px;
+        
+        
+    
+        .grid-inicio {
+    
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 170%;
+            gap: 30px;
+    
+            .grid-item1 {
+    
+                img {
+                    padding-left: 10px;
+                    width: 100%;
+                    height: 100%;
+                    transition: 1s;
+                    cursor: pointer;
+                }
+            }
+            .grid-item {
+    
+                img {
+                     height: 100%;
+                     width:  100%;
+                     transition: 1s;
+                     cursor: pointer;
+                     &:hover{
+                       transform: scale(1.1);
+                       transition: 1s;
+                     } 
+                }
+                   
+            }      
+        } 
+    }
+
+    #Updates {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 50px 50px 50px 50px;
+        gap: 30px;
+        
+        .card {
+          height: 100%;
+          width: 30%;
+          
+          .card-img-top {
+            height: 100%;
+            width: 100%;
+          }
+          
+          .card-body {
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            background-color: #111218;
+          }
+          
+          .card-title {
+            font-family: 'motiva-sans';
+            color: aliceblue;
+            flex-wrap: wrap;
+            font-size: 20px;
+          }
+          
+          .card-text {
+            font-family: 'motiva-sans';
+            color: aliceblue;
+            font-size: 15px;
+          }
+        }
+      }
+      
+      /* Searchbar y Dropdown */
+      
+      .searchbarflex-container {
+        width: 100%;
+        height: 140px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 0px 15px 10px;
+      }
+      
+      
+      /* BIBLIOTECA - RESPONSIVE 1080p */
+      
+      .bibliotecajuegos {
+        display: flex;
+        padding-top: 100px;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        img {
+          width: 20%;
+          height: 10%;
+          transition: 1s;
+          cursor: pointer;
+          
+          &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+          }
+        }
+      }
+
+
+
+    /* INICIO */
+
+
+    /* BIBLIOTECA */
+
+      
+    .bibliotecajuegos {
+        display: flex;
+        padding-top: 100px;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        img {
+          width: 30%;
+          height: 40%;
+          transition: 1s;
+          cursor: pointer;
+          
+          &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+          }
+        }
+      }
+
+
+
+    /* Flex Container para searchbar y dropdowns */
+
+    .searchbarflex-container {
+        width: 100%;
+        height: 140px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 0px 15px 10px;
+      }
+ 
+
+ /* Flex Container para searchbar y dropdowns */
+
+ .searchbarflex-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0px 15px 10px;
+  
+  }
+ 
+  /* Flex Container para searchbar y dropdowns */
+  
+  /* Dropdown */
+
+.dropdown-biblioteca {
+    padding: 20px 50px;
+  
+    .dropdown-menu {
+        padding: 70px; 
+        background-color: rgb(36, 36, 44);   
+    }
+    .dropdown-item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: aliceblue;
+        font-size: 30px;
+        padding: 5px ;
+        &:hover {
+        background-color: rgb(36, 36, 44);
+        }
+    }
+    .btn {
+     &.btn-secondary{
+     font-family: 'motiva-sans';
+     padding: 30px 20px;
+     font-size: 30px;
+     background-color:rgb(36, 36, 44);
+      }
+
+   }     
+}
+
+  /* Dropdown */
+
+  /* Searchbar */
+
+.search-bar {
+    padding: 20px 70px;
+ }
+  
+.form-searchbar {
+     font-size: 30px;
+     padding: 30px 30px;
+     background-color: rgb(36, 36, 44);
+     border-width: 1px;
+     &::placeholder {
+     font-family: 'motiva-sans';
+     color: rgb(254, 255, 255);
+     text-indent: 10px;
+       
+     }
+ }
+    
+   /* Searchbar */
+
+
+  /* SOPORTE */
+
+  .soporte-h2 {
+    display: flex;
+    color: aliceblue;
+    flex-wrap: wrap;
+    font-family: 'motiva-sans';
+    justify-content: left;
+    font-size: 40px ;
+    margin: 10px 10px 10px 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOPORTE */
+
+}
+
+
+
+
+

@@ -4,7 +4,6 @@
 
 .perfil-nav-container{
     display: flex;
-    justify-content: flex-start;
     padding-left: 100px;
     padding-bottom: 10px;
     width: 100%;
@@ -54,9 +53,8 @@
 
 .contacto-perfil {
     display: flex;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    width: 50%;
+    width: 100%;
+    height: 100%;
 
      .contacto-info {
          flex-direction: column;

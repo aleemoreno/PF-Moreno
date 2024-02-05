@@ -5,7 +5,9 @@
 @use 'grids';
 @use 'accordion.scss';
 @use 'responsive-1920px.scss';
+@use 'responsive-1200px.scss';
 @use 'responsive-770px.scss';
+
 
 
 @font-face {
@@ -85,15 +87,17 @@ body {
 .bibliotecajuegos {
   display: flex;
   padding-top: 100px;
+  padding-bottom: 100px;
   justify-content: center;
   width: 100%;
+  height: 100%;
   flex-wrap: wrap;
   gap: 20px;
 
 
    img {
-    width: 15%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     transition: 1s;
     &:hover{
       transform: scale(1.1);
@@ -109,26 +113,23 @@ body {
 
 
 
-  .productos-recientes-container {
-    display: flex;
-    width: 26%;
-    padding: 30px 10px 10px 100px;
-}
 
 .productos-recientes-menu {
-    width: 98%;
-    background-color: rgb(13, 18, 26); 
-    font-size: 50px;
+  display: flex;
+  background-color: rgb(13, 18, 26); 
+  flex-wrap: wrap;
+  width: 100%;
      
     ul {
         margin-bottom: 0px;
         padding-left: 0px;
         list-style-type: none;
         width: 100%;
-        height: 110%;
+        height: 50%;
         line-height: 160px;
 
         .productoreciente-navitem {
+          font-size: 30px;
           border-top: solid #1c4d818e;;
           border-bottom: solid #1c4d818e;;
           display: flex;
@@ -151,30 +152,29 @@ body {
 }
 
 
-.soporte-flex-container {
-    display: flex;
-    justify-content: left;
-    padding: 40px  100px 100px 100px ;  
-    
-}    
-
 .steam-support-menu {
+ display: flex;
+ flex-wrap: wrap;
  background-color: rgb(13, 18, 26);  
- font-size: 60px;
+ width: 100%;
+ height: 100%;
+ 
  
     ul {
         padding-left: 0px;
-        width: 2000px;
-        height: 1980px;
-        line-height: 250px;
+        width: 100%;
+        height: 50%;
+        line-height: 150px;
         
 
         .support-navitem {
+          margin-bottom: 0;
+          font-size: 30px;
           border-top: solid #1c4d818e;;
           border-bottom: solid #1d2b3a;;
           display: flex;
           justify-content: left;
-          height: 250px;
+          height: 150px;
           &:hover {
             background-color: rgb(37, 51, 73);
             }   
@@ -197,8 +197,7 @@ body {
 /* CUENTA */
 
 .seccion-perfil-container {
-  
-   padding: 20px 50px 20px 50px ;
+
    display: flex;
    flex-wrap: wrap;
    width: 100%;
@@ -214,6 +213,7 @@ body {
     .avatar-img {
       display: flex;
       height: 100%;
+      
 
     }
     .perfil-bio {
@@ -224,18 +224,15 @@ body {
     h3 {
       flex-wrap: wrap;
       line-height: 1px;
-      padding: 0px 30px;
       font-size: 70px;
     }
     
     h5 {
       line-height: 150px;
-      padding: 0px 40px;
       font-size: 25px;
 
     }
     p {
-      padding: 0px 30px;
       font-size: 30px;
     }
   } 

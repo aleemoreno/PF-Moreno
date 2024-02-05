@@ -231,7 +231,6 @@
 /* Nav/menu para seccion CUENTA */
 .perfil-nav-container {
   display: flex;
-  justify-content: flex-start;
   padding-left: 100px;
   padding-bottom: 10px;
   width: 100%;
@@ -276,9 +275,8 @@
 
 .contacto-perfil {
   display: flex;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  width: 50%;
+  width: 100%;
+  height: 100%;
 }
 .contacto-perfil .contacto-info {
   flex-direction: column;
@@ -313,7 +311,7 @@
   background-color: rgba(9, 53, 94, 0.568);
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
   /* INICIO - RESPONSIVE 1080p*/
   /* Header logos y títulos */
   .Logo {
@@ -428,7 +426,8 @@
   }
   #Updates .card {
     height: 100%;
-    width: 20%;
+    width: 30%;
+    border: none;
   }
   #Updates .card .card-img-top {
     height: 100%;
@@ -444,12 +443,12 @@
     font-family: "motiva-sans";
     color: aliceblue;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 30px;
   }
   #Updates .card .card-text {
     font-family: "motiva-sans";
     color: aliceblue;
-    font-size: 15px;
+    font-size: 20px;
   }
   /* Searchbar y Dropdown */
   .searchbarflex-container {
@@ -480,19 +479,13 @@
     transition: 1s;
   }
   /* SOPORTE */
-  .productos-recientes-container {
-    flex-wrap: wrap;
-    display: flex;
-    width: 100%;
-  }
-  .productos-recientes-container .productos-recientes-menu {
+  .productos-recientes-menu {
     display: flex;
     background-color: rgb(13, 18, 26);
-    font-size: 30px;
     flex-wrap: wrap;
     width: 100%;
   }
-  .productos-recientes-container .productos-recientes-menu ul {
+  .productos-recientes-menu ul {
     display: flex;
     flex-direction: column;
     padding-bottom: 0px;
@@ -502,18 +495,18 @@
     height: 100%;
     line-height: 100px;
   }
-  .productos-recientes-container .productos-recientes-menu ul .productoreciente-navitem {
+  .productos-recientes-menu ul .productoreciente-navitem {
     border-top: solid rgba(28, 77, 129, 0.5568627451);
     border-bottom: solid rgba(28, 77, 129, 0.5568627451);
     display: flex;
     justify-content: left;
-    width: 850px;
+    width: 100px;
     height: 100px;
   }
-  .productos-recientes-container .productos-recientes-menu ul .productoreciente-navitem:hover {
+  .productos-recientes-menu ul .productoreciente-navitem:hover {
     background-color: rgb(40, 54, 77);
   }
-  .productos-recientes-container .productos-recientes-menu ul .productoreciente-navitem a {
+  .productos-recientes-menu ul .productoreciente-navitem a {
     display: block;
     width: 100%;
     font-family: "motiva-sans";
@@ -562,11 +555,10 @@
   /* CUENTA - RESPONSIVE 1080p */
   .avatar-img {
     display: flex;
-    padding-left: 2%;
     height: 100%;
     width: 100%;
     justify-content: center;
-    background-color: #111218;
+    background-color: #21222b;
   }
   .avatar-img img {
     width: 30%;
@@ -576,14 +568,17 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 500px;
+    height: 600px;
+    padding: 20px 100px 100px 200px;
+    margin: 0;
   }
   .seccion-perfil-container .perfil-bio {
     display: flex;
     flex-direction: column;
     height: 460px;
-    width: 100%;
+    width: 80%;
     background-color: #111218;
+    padding: 10px 10px 10px 10px;
   }
   .seccion-perfil-container .perfil-bio h3 {
     flex-wrap: wrap;
@@ -597,6 +592,7 @@
     height: 10%;
   }
   .seccion-perfil-container .perfil-bio p {
+    padding-top: 50px;
     color: aliceblue;
     font-size: 30px;
     height: 100%;
@@ -604,12 +600,14 @@
   .perfil-nav-container {
     display: flex;
     justify-content: center;
-    padding-bottom: 1000px;
+    padding-right: 100px;
     width: 100%;
     height: 500px;
   }
   .perfil-nav-menu {
+    display: flex;
     height: 500px;
+    width: 300%;
     background-color: rgb(13, 18, 26);
     font-size: 30px;
   }
@@ -617,8 +615,8 @@
     padding-bottom: 0px;
     padding-left: 0px;
     list-style-type: none;
-    width: 700px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     line-height: 100px;
   }
   .perfil-nav-menu ul .perfil-navitem {
@@ -626,7 +624,7 @@
     border-bottom: solid rgba(28, 77, 129, 0.5568627451);
     display: flex;
     justify-content: left;
-    width: 700px;
+    width: 100%;
     height: 100px;
   }
   .perfil-nav-menu ul .perfil-navitem:hover {
@@ -641,23 +639,23 @@
   }
   .h1-contacto {
     color: aliceblue;
-    font-size: 35px;
-    padding: 10px 40px 30px 1050px;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 10px;
   }
   .contacto-perfil {
     display: flex;
     padding-bottom: 100px;
-    padding-left: 100px;
-    width: 10000px;
+    padding-left: 20px;
+    width: 200%;
+    height: 100%;
   }
   .contacto-perfil .contacto-info {
-    display: flex;
     flex-direction: column;
     height: 400px;
     background-color: rgba(13, 18, 26, 0.938);
     font-size: 50px;
-    width: 700px;
-    margin: 0px 10px 100px 150px;
+    width: 100%;
   }
   .contacto-perfil .contacto-info .contacto-item {
     border: solid rgb(4, 79, 145);
@@ -683,8 +681,348 @@
     background-color: rgba(9, 53, 94, 0.568);
   }
 }
+@media screen and (min-width: 1401px) and (max-width: 1739px) {
+  .avatar-img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: #21222b;
+  }
+  .avatar-img img {
+    width: 30%;
+  }
+  .perfil-bio {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    width: 80%;
+    background-color: #111218;
+    padding: 10px 10px 10px 10px;
+  }
+  .perfil-bio h3 {
+    flex-wrap: wrap;
+    color: aliceblue;
+    font-size: 70px;
+    height: 30%;
+  }
+  .perfil-bio h5 {
+    color: aliceblue;
+    font-size: 25px;
+    height: 10%;
+  }
+  .perfil-bio p {
+    padding-top: 50px;
+    color: aliceblue;
+    font-size: 30px;
+    height: 100%;
+  }
+  .perfil-nav-container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100px;
+  }
+  .perfil-nav-container .perfil-nav-menu {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: left;
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+  }
+  .perfil-nav-container .perfil-nav-menu ul {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    width: 700px;
+    height: 600px;
+    line-height: 100px;
+  }
+  .perfil-nav-container .perfil-nav-menu ul .perfil-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100px;
+  }
+  .perfil-nav-container .perfil-nav-menu ul .perfil-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .perfil-nav-container .perfil-nav-menu ul .perfil-navitem a {
+    display: block;
+    width: 100%;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .perfil-nav-container .h1-contacto {
+    color: aliceblue;
+    font-size: 10px;
+    padding: 10px 10px 0px 1150px;
+  }
+  .perfil-nav-container .contacto-perfil {
+    display: flex;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    width: 10000px;
+    height: 100%;
+  }
+  .perfil-nav-container .contacto-perfil .contacto-info {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: rgba(13, 18, 26, 0.938);
+    font-size: 50px;
+    width: 100%;
+    margin: 0;
+  }
+  .perfil-nav-container .contacto-perfil .contacto-info .contacto-item {
+    border: solid rgb(4, 79, 145);
+    padding: 1px 10px 10px 30px;
+    margin-top: 0px;
+    font-family: "motiva-sans";
+    font-size: 30px;
+    color: aliceblue;
+  }
+  .edit-botton {
+    padding: 30px 10px 60px 0px;
+  }
+  .btn-primary {
+    padding: 10px 0px;
+    font-size: 30px;
+    font-family: "motiva-sans";
+    background-color: rgba(27, 30, 32, 0.466);
+    border: none;
+    width: 200px;
+    height: 70px;
+  }
+  .btn-primary:hover {
+    background-color: rgba(9, 53, 94, 0.568);
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  /* INICIO */
+  .menu_hamburguesa {
+    display: none;
+  }
+  #menu_hamburguesa {
+    display: none;
+  }
+  .secciones {
+    background-color: rgb(13, 18, 26);
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  .secciones .secciones-menu {
+    font-family: "motiva-sans";
+    background-color: rgb(13, 18, 26);
+    line-height: 10px;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  .secciones .secciones-menu li {
+    font-family: "motiva-sans";
+    font-size: 25px;
+    width: 15%;
+    height: 100px;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+  }
+  .secciones .secciones-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+  }
+  .secciones .secciones-menu li a:hover {
+    background-color: #4a6285;
+  }
+  .container-juegosrecientes {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 30px 30px 250px 30px;
+  }
+  .container-juegosrecientes .grid-inicio {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 170%;
+    gap: 30px;
+  }
+  .container-juegosrecientes .grid-inicio .grid-item1 img {
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .container-juegosrecientes .grid-inicio .grid-item img {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .container-juegosrecientes .grid-inicio .grid-item img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  #Updates {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 50px 50px 50px 50px;
+    gap: 30px;
+  }
+  #Updates .card {
+    height: 100%;
+    width: 30%;
+  }
+  #Updates .card .card-img-top {
+    height: 100%;
+    width: 100%;
+  }
+  #Updates .card .card-body {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: #111218;
+  }
+  #Updates .card .card-title {
+    font-family: "motiva-sans";
+    color: aliceblue;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+  #Updates .card .card-text {
+    font-family: "motiva-sans";
+    color: aliceblue;
+    font-size: 15px;
+  }
+  /* Searchbar y Dropdown */
+  .searchbarflex-container {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0px 15px 10px;
+  }
+  /* BIBLIOTECA - RESPONSIVE 1080p */
+  .bibliotecajuegos {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bibliotecajuegos img {
+    width: 20%;
+    height: 10%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .bibliotecajuegos img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  /* INICIO */
+  /* BIBLIOTECA */
+  .bibliotecajuegos {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bibliotecajuegos img {
+    width: 30%;
+    height: 40%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .bibliotecajuegos img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  /* Flex Container para searchbar y dropdowns */
+  .searchbarflex-container {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0px 15px 10px;
+  }
+  /* Flex Container para searchbar y dropdowns */
+  .searchbarflex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0px 15px 10px;
+  }
+  /* Flex Container para searchbar y dropdowns */
+  /* Dropdown */
+  .dropdown-biblioteca {
+    padding: 20px 50px;
+  }
+  .dropdown-biblioteca .dropdown-menu {
+    padding: 70px;
+    background-color: rgb(36, 36, 44);
+  }
+  .dropdown-biblioteca .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 5px;
+  }
+  .dropdown-biblioteca .dropdown-item:hover {
+    background-color: rgb(36, 36, 44);
+  }
+  .dropdown-biblioteca .btn.btn-secondary {
+    font-family: "motiva-sans";
+    padding: 30px 20px;
+    font-size: 30px;
+    background-color: rgb(36, 36, 44);
+  }
+  /* Dropdown */
+  /* Searchbar */
+  .search-bar {
+    padding: 20px 70px;
+  }
+  .form-searchbar {
+    font-size: 30px;
+    padding: 30px 30px;
+    background-color: rgb(36, 36, 44);
+    border-width: 1px;
+  }
+  .form-searchbar::placeholder {
+    font-family: "motiva-sans";
+    color: rgb(254, 255, 255);
+    text-indent: 10px;
+  }
+  /* Searchbar */
+  /* SOPORTE */
+  .soporte-h2 {
+    display: flex;
+    color: aliceblue;
+    flex-wrap: wrap;
+    font-family: "motiva-sans";
+    justify-content: left;
+    font-size: 40px;
+    margin: 10px 10px 10px 10px;
+  }
+  /* SOPORTE */
+}
 /* RESPONSIVE 480px */
-@media screen and (min-width: 370px) and (max-width: 770px) {
+@media screen and (min-width: 370px) and (max-width: 1024px) {
   .Logo {
     display: flex;
     flex-wrap: wrap;
@@ -875,6 +1213,25 @@
   /* INICIO */
   /* --------------------------------------------------------------------------------------------------------------- */
   /* BIBLIOTECA */
+  .bibliotecajuegos {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bibliotecajuegos img {
+    width: 40%;
+    height: 20%;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .bibliotecajuegos img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
   /* BIBLIOTECA */
   /* TIENDA */
   .grid-container {
@@ -913,116 +1270,6 @@
   }
   /* CUENTA */
   /* --------------------------------------------------------------------------------------------------------------- */
-  .avatar-img {
-    justify-content: center;
-    display: flex;
-    padding: 10px 10px 0px 10px;
-  }
-  .avatar-img img {
-    width: 50%;
-    height: 50%;
-  }
-  .seccion-perfil-container {
-    width: 100px;
-    height: 100%;
-  }
-  .seccion-perfil-container .perfil-bio {
-    background-color: #111218;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    height: 300px;
-  }
-  .seccion-perfil-container .perfil-bio h3 {
-    height: 20%;
-    font-size: 30px;
-    color: aliceblue;
-  }
-  .seccion-perfil-container .perfil-bio h5 {
-    height: 20%;
-    font-size: 15px;
-    color: aliceblue;
-  }
-  .seccion-perfil-container .perfil-bio p {
-    height: 100%;
-    font-size: 10px;
-    color: aliceblue;
-  }
-  .perfil-nav-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 10%;
-    margin: auto;
-    padding: 0;
-  }
-  .perfil-nav-menu {
-    height: 10%;
-    background-color: rgb(13, 18, 26);
-    font-size: 30px;
-  }
-  .perfil-nav-menu ul {
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-  }
-  .perfil-nav-menu ul .perfil-navitem {
-    border-top: solid rgba(28, 77, 129, 0.5568627451);
-    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: 100px;
-    font-size: 20px;
-    margin: 0;
-  }
-  .perfil-nav-menu ul .perfil-navitem:hover {
-    background-color: rgb(40, 54, 77);
-  }
-  .perfil-nav-menu ul .perfil-navitem a {
-    display: block;
-    font-family: "motiva-sans";
-    text-decoration: none;
-    color: aliceblue;
-  }
-  .h1-contacto {
-    display: flex;
-    font-size: 30px;
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 70px;
-    color: aliceblue;
-  }
-  .contacto-perfil {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 0;
-  }
-  .contacto-perfil .contacto-info {
-    flex-direction: column;
-    height: 400px;
-    background-color: rgba(13, 18, 26, 0.938);
-    font-size: 50px;
-    width: 100%;
-  }
-  .contacto-perfil .contacto-info .contacto-item {
-    border-top: solid rgba(28, 77, 129, 0.5568627451);
-    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
-    padding: 1px 10px 10px 30px;
-    width: 100%;
-    margin-top: 0px;
-    font-family: "motiva-sans";
-    font-size: 20px;
-    color: aliceblue;
-  }
   /* SOPORTE */
   /* --------------------------------------------------------------------------------------------------------------- */
   .soporte-h2 {
@@ -1031,13 +1278,13 @@
     flex-wrap: wrap;
     font-family: "motiva-sans";
     justify-content: left;
-    font-size: 30px;
+    font-size: 5px;
     margin: 10px 10px 10px 10px;
   }
   .productos-recientes-menu {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 100px;
     background-color: rgb(13, 18, 26);
   }
   .productos-recientes-menu ul {
@@ -1066,7 +1313,7 @@
   .steam-support-menu {
     display: flex;
     background-color: rgb(13, 18, 26);
-    width: 100%;
+    width: 10%;
     height: 100%;
   }
   .steam-support-menu ul {
@@ -1147,11 +1394,49 @@
   }
   /* Searchbar */
 }
-@media screen and (min-width: 370px) and (max-width: 656px) {
+@media screen and (min-width: 370px) and (max-width: 1024px) {
+  .soporte-h2 {
+    display: flex;
+    color: aliceblue;
+    flex-wrap: wrap;
+    font-family: "motiva-sans";
+    justify-content: left;
+    font-size: 30px;
+    margin: 10px 10px 10px 10px;
+  }
+  .productos-recientes-menu {
+    display: flex;
+    height: 100%;
+    width: 100px;
+    background-color: rgb(13, 18, 26);
+  }
+  .productos-recientes-menu ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+  }
+  .productos-recientes-menu ul .productoreciente-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 20px !important;
+  }
+  .productos-recientes-menu ul .productoreciente-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .productos-recientes-menu ul .productoreciente-navitem a {
+    display: block;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+    width: 100%;
+  }
   .steam-support-menu {
     display: flex;
     background-color: rgb(13, 18, 26);
-    width: 100%;
+    width: 10%;
     height: 100%;
   }
   .steam-support-menu ul {
@@ -1164,7 +1449,7 @@
     border-bottom: solid rgba(28, 77, 129, 0.5568627451);
     display: flex;
     width: 100%;
-    font-size: 15px;
+    font-size: 20px !important;
   }
   .steam-support-menu ul .support-navitem:hover {
     background-color: rgb(40, 54, 77);
@@ -1175,6 +1460,163 @@
     text-decoration: none;
     color: aliceblue;
     width: 100%;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 650px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+  }
+  .grid-container .producto__grid {
+    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .grid-container .producto__grid img {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+  }
+  .grid-container2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 10px 200px 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .grid-container2 .productodos__grid {
+    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+  }
+  .grid-container2 .productodos__grid img {
+    height: 150%;
+    width: 100%;
+    transition: 1s;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 1400px) {
+  .avatar-img {
+    justify-content: center;
+    display: flex;
+    padding: 10px 10px 0px 10px;
+  }
+  .avatar-img img {
+    width: 50%;
+    height: 50%;
+  }
+  .seccion-perfil-container {
+    width: 50%;
+    height: 100%;
+  }
+  .seccion-perfil-container .perfil-bio {
+    background-color: #111218;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 300px;
+  }
+  .seccion-perfil-container .perfil-bio h3 {
+    height: 20%;
+    font-size: 30px;
+    color: aliceblue;
+  }
+  .seccion-perfil-container .perfil-bio h5 {
+    height: 20%;
+    font-size: 15px;
+    color: aliceblue;
+  }
+  .seccion-perfil-container .perfil-bio p {
+    height: 100%;
+    font-size: 10px;
+    color: aliceblue;
+  }
+  .perfil-nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    padding: 0;
+  }
+  .perfil-nav-menu {
+    height: 10%;
+    background-color: rgb(13, 18, 26);
+    font-size: 30px;
+  }
+  .perfil-nav-menu ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .perfil-nav-menu ul .perfil-navitem {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    font-size: 20px;
+    margin: 0;
+  }
+  .perfil-nav-menu ul .perfil-navitem:hover {
+    background-color: rgb(40, 54, 77);
+  }
+  .perfil-nav-menu ul .perfil-navitem a {
+    display: block;
+    font-family: "motiva-sans";
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .h1-contacto {
+    display: flex;
+    font-size: 30px;
+    color: aliceblue;
+  }
+  .contacto-perfil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .contacto-perfil .contacto-info {
+    flex-direction: column;
+    height: 400px;
+    background-color: rgba(13, 18, 26, 0.938);
+    font-size: 50px;
+    width: 100%;
+  }
+  .contacto-perfil .contacto-info .contacto-item {
+    border-top: solid rgba(28, 77, 129, 0.5568627451);
+    border-bottom: solid rgba(28, 77, 129, 0.5568627451);
+    padding: 1px 10px 10px 30px;
+    width: 100%;
+    margin-top: 0px;
+    font-family: "motiva-sans";
+    font-size: 20px;
+    color: aliceblue;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 1400px) {
+  .h1-contacto {
+    display: flex;
+    padding: 20px 0px 20px 100px;
+    text-align: center;
+  }
+  h1 {
+    justify-content: center;
   }
 }
 @font-face {
@@ -1240,14 +1682,16 @@ body {
 .bibliotecajuegos {
   display: flex;
   padding-top: 100px;
+  padding-bottom: 100px;
   justify-content: center;
   width: 100%;
+  height: 100%;
   flex-wrap: wrap;
   gap: 20px;
 }
 .bibliotecajuegos img {
-  width: 15%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
   transition: 1s;
   cursor: pointer;
 }
@@ -1258,26 +1702,22 @@ body {
 
 /* Biblioteca */
 /* SOPORTE */
-.productos-recientes-container {
-  display: flex;
-  width: 26%;
-  padding: 30px 10px 10px 100px;
-}
-
 .productos-recientes-menu {
-  width: 98%;
+  display: flex;
   background-color: rgb(13, 18, 26);
-  font-size: 50px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .productos-recientes-menu ul {
   margin-bottom: 0px;
   padding-left: 0px;
   list-style-type: none;
   width: 100%;
-  height: 110%;
+  height: 50%;
   line-height: 160px;
 }
 .productos-recientes-menu ul .productoreciente-navitem {
+  font-size: 30px;
   border-top: solid rgba(28, 77, 129, 0.5568627451);
   border-bottom: solid rgba(28, 77, 129, 0.5568627451);
   display: flex;
@@ -1296,28 +1736,27 @@ body {
   color: aliceblue;
 }
 
-.soporte-flex-container {
-  display: flex;
-  justify-content: left;
-  padding: 40px 100px 100px 100px;
-}
-
 .steam-support-menu {
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgb(13, 18, 26);
-  font-size: 60px;
+  width: 100%;
+  height: 100%;
 }
 .steam-support-menu ul {
   padding-left: 0px;
-  width: 2000px;
-  height: 1980px;
-  line-height: 250px;
+  width: 100%;
+  height: 50%;
+  line-height: 150px;
 }
 .steam-support-menu ul .support-navitem {
+  margin-bottom: 0;
+  font-size: 30px;
   border-top: solid rgba(28, 77, 129, 0.5568627451);
   border-bottom: solid #1d2b3a;
   display: flex;
   justify-content: left;
-  height: 250px;
+  height: 150px;
 }
 .steam-support-menu ul .support-navitem:hover {
   background-color: rgb(37, 51, 73);
@@ -1332,7 +1771,6 @@ body {
 
 /* CUENTA */
 .seccion-perfil-container {
-  padding: 20px 50px 20px 50px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -1354,16 +1792,13 @@ body {
 .seccion-perfil-container .perfil-header h3 {
   flex-wrap: wrap;
   line-height: 1px;
-  padding: 0px 30px;
   font-size: 70px;
 }
 .seccion-perfil-container .perfil-header h5 {
   line-height: 150px;
-  padding: 0px 40px;
   font-size: 25px;
 }
 .seccion-perfil-container .perfil-header p {
-  padding: 0px 30px;
   font-size: 30px;
 }
 
