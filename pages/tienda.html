@@ -3,21 +3,31 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Tienda/Steamlowcost</title>
+   <meta name="description" content="Pagina de Tienda de Steam. Aqui encontraras todos los nuevos lanzamientos, juegos y ofertas disponibles en nuetra pagina.">
+   
+   <title>Tienda - Steamlowcost</title>
+   
+   <!-- Boostrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <!-- Animacion -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
    <link rel="stylesheet" href="../Estilos/style.css">
 </head>
 <body>
    <header>
       <div class="Logo">
-         <img src="../Imagenes/STEAMLOGO.png">
+         <img src="../Imagenes/STEAMLOGO.png" alt="imagen de logo para Steam Lowcost">
          <h1>Steam Lowcost</h1>
       </div>
 
        <section id="Tienda"> 
 
         <div class="sub-title-container">
-        <h2 class="sub-title">TIENDA</h2>
+        <h2 class="sub-title animate__animated  animate__pulse">TIENDA</h2>
         </div>
        </section>
        
@@ -25,7 +35,7 @@
       
          <label class="menu_hamburguesa" for="menu_hamburguesa">
            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="aliceblue" class="bi bi-list" viewBox="0 0 16 16">
-             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
            </svg>
          </label>
           
@@ -43,26 +53,26 @@
     
 
    <main>
-      <div class="searchbarflex-container">
+    <div class="searchbarflex-container">
       <div class="searchbar">
          <form class="search-bar" role="search">
-           <input class="form-searchbar" type="search" placeholder="Buscar..." aria-label="Search">
+         <input class="form-searchbar" type="search" placeholder="Buscar..." aria-label="Search">
          </form>
        </div>
-    </div>
+     </div>
          <div class="main-h2-container">
          <article class="main-h2"><h2>MÁS VENDIDOS</h2></article> 
          </div>
         <section class="grid-container">
            <div class="producto__grid">
               <div class="grid-item">
-                 <img src="../Imagenes/DEATHSTRANDING.jpg" alt="" class="tarjeta__producto">
+               <img src="../Imagenes/DEATHSTRANDING.jpg" alt="Juego mas vendido Death Stranding" class="tarjeta__producto">
+              </div>
+              <div class= "grid-item">
+               <img src="../Imagenes/thewitcher.webp" alt="Juego mas vendido The Witcher 3 Wild Hunt" class="tarjeta__producto">
               </div>
               <div class="grid-item">
-                 <img src="../Imagenes/thewitcher.webp" alt="" class="tarjeta__producto">
-              </div>
-              <div class="grid-item">
-                 <img src="../Imagenes/METROEXODUS.avif" class="tarjeta__producto">
+               <img src="../Imagenes/METROEXODUS.avif" alt="juego mas vendido Metro Exodus" class="tarjeta__producto">
               </div>            
            </div>
         </section>
@@ -74,31 +84,32 @@
         <section class="grid-container2">
            <div class= "productodos__grid">
               <div class="grid-item">
-                 <img src="../Imagenes/hollowknight.jpg " alt="" class="tarjeta__producto">
+               <img src="../Imagenes/hollowknight.jpg " alt="Oferta Especial para Hollow Knight" class="tarjeta__producto">
               </div>
               <div class="grid-item">
-                 <img src="../Imagenes/littlenightm.png" alt="" class="tarjeta__producto">
+               <img src="../Imagenes/littlenightm.png" alt="Oferta Especial para Little Nightmares" class="tarjeta__producto">
               </div>
               <div class="grid-item">
-                 <img src="../Imagenes/Bloodborneport.jpg" alt="" class="tarjeta__producto">
+               <img src="../Imagenes/Bloodborneport.jpg" alt="Oferta Especial para Bloodborne" class="tarjeta__producto">
               </div>
               <div class="grid-item">
-                 <img src="../Imagenes/alicemadness.jpg" alt="">
+               <img src="../Imagenes/alicemadness.jpg" alt="Oferta Especial para Alice Madness" class="tarjeta__producto">
               </div>
               <div class="grid-item">
-                  <img src="../Imagenes/diablo4.jpg" alt="">
+               <img src="../Imagenes/diablo4.jpg" alt="Oferta Especial para Diablo 4" class="tarjeta__producto">
               </div>
               <div class="grid-item">
-                  <img src="../Imagenes/vallheimtienda.jpg" alt="">
+               <img src="../Imagenes/vallheimtienda.jpg" alt="Oferta Especial para Vallheim" class="tarjeta__producto">
               </div>
            </div>
-        </section>
+       </section>
 
      </main>
-        <footer class="footer">
-           <h5>© 2023 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
-             Todos los precios incluyen IVA (donde sea aplicable).</h5>
-        </footer>
+
+      <footer class="footer">
+        <h5>© 2023 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
+        Todos los precios incluyen IVA (donde sea aplicable).</h5>
+      </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
